@@ -17,6 +17,11 @@ colors:
   paper: "#f2f1e6"
   paper-soft: "#c8d6c2"
   frost-soft: "#bfd0de"
+  hero-mid: "#1b3d36"          # middle stop of the dusk-to-pine hero gradient
+  moss-deep: "#24472f"         # ghost button hover on pine
+  frost-icon: "#9fc3e0"        # winter group icon
+  bubble-green: "#2f7d4a"      # message-preview chat bubble (desktop only)
+  bubble-text: "#fff"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
@@ -56,8 +61,61 @@ typography:
     fontSize: "17px"
     fontWeight: 800
     lineHeight: 1
+  display-close:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(54px, 8vw, 96px)"
+    fontWeight: 900
+    lineHeight: 0.95
+  display-area:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(42px, 8vw, 96px)"
+    fontWeight: 900
+    lineHeight: 0.95
+  wordmark:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "22px"
+    fontWeight: 900
+    lineHeight: 1
+  name-line:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(17px, 2.1vw, 22px)"
+    fontWeight: 800
+    lineHeight: 1.3
+  name-line-close:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(17px, 2vw, 22px)"
+    fontWeight: 800
+    lineHeight: 1.3
+  pitch:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(14px, 3.9vw, 20px)"
+    fontWeight: 400
+    lineHeight: 1.45
+  quote:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(19px, 2vw, 24px)"
+    fontWeight: 700
+    lineHeight: 1.38
+  small:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.5
+  mock-ui:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.45
+  mock-ui-caption:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "13px"
+    fontWeight: 400
+    lineHeight: 1.4
 rounded:
   pill: "999px"
+  bubble: "20px"
+  bubble-tail: "6px"
+  focus: "6px"
   card: "26px"
   circle: "50%"
 spacing:
@@ -222,7 +280,7 @@ Depth comes from the world, not from cards: layered canvas grass (back greens, m
 
 ## Shapes
 
-Soft and round where the hand goes, square everywhere else. Buttons are full pills (`rounded.pill`), the arrow on each job row is a circle (`rounded.circle`), the message card is a generous rounded rectangle (`rounded.card`) with a chat bubble inside (20px with a 6px tail corner). Bands are hard full-bleed rectangles whose top and bottom seams are broken by organic canvas silhouettes: tapered quadratic grass blades, sine-summed drift crests, two-curve leaves. Line icons are drawn at 2.2-2.4 stroke with round caps and joins, sized 20-30px.
+Soft and round where the hand goes, square everywhere else. The pitch line is sized by script between 16px and 20px on one line (the 14px CSS floor is only a pre-script fallback); `mock-ui` sizes live only inside the desktop message preview, which imitates a phone screen and is exempt from the 16px floor. Buttons are full pills (`rounded.pill`), the arrow on each job row is a circle (`rounded.circle`), the message card is a generous rounded rectangle (`rounded.card`) with a chat bubble inside (20px with a 6px tail corner). Bands are hard full-bleed rectangles whose top and bottom seams are broken by organic canvas silhouettes: tapered quadratic grass blades, sine-summed drift crests, two-curve leaves. Line icons are drawn at 2.2-2.4 stroke with round caps and joins, sized 20-30px.
 
 ## Components
 
