@@ -1,0 +1,6 @@
+.claude-claimed
+.claude/
+.impeccable/config.local.json
+.shoot-*
+shots/
+src-assets/

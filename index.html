@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Handy Dev — Handyman &amp; Property Maintenance, Ocean County NJ</title>
+<meta name="description" content="Handy Dev: handyman, yard work, gutters, power washing and snow removal in Ocean County, NJ. Fair prices, free estimates. Text (609) 467-9972.">
+<meta name="theme-color" content="#173a26">
+<style>
+/* ===== Tokens ===== */
+:root {
+  --pine: #173a26;        /* hero + close ground */
+  --pine-deep: #122f1f;
+  --dusk: #1d3a48;        /* top of hero sky */
+  --sage: #e6ecd9;        /* services ground */
+  --ink: #13301f;         /* text on light grounds */
+  --ink-soft: #3c5a44;
+  --slate: #1f3447;       /* winter ground */
+  --snow: #eef2f4;        /* how-it-works ground */
+  --paper: #f2f1e6;       /* text on dark grounds */
+  --paper-soft: #c8d6c2;  /* secondary text on pine */
+  --frost-soft: #bfd0de;  /* secondary text on slate */
+  --orange: #f28c28;      /* work-glove orange: primary action */
+  --orange-hot: #ff9d3a;
+  --orange-ink: #1d1a12;
+  --radius: 14px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1200px;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+}
+
+/* ===== Base ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scrollbar-color: #4f7a52 var(--pine-deep); }
+body {
+  margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.55;
+  color: var(--ink); background: var(--pine); overflow-x: hidden;
+}
+::selection { background: var(--orange); color: var(--orange-ink); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3 { margin: 0; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; line-height: .95; text-wrap: balance; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.field { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ===== Buttons (pair: same height, same 2px outline) ===== */
+.btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 58px; padding: 0 26px; border-radius: 999px; border: 2px solid var(--paper);
+  font: 800 17px/1 var(--font); text-decoration: none; white-space: nowrap;
+  transition: transform .25s var(--ease-out), background-color .2s, box-shadow .25s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.btn svg { width: 22px; height: 22px; flex: none; }
+.btn-primary { background: var(--orange); border-color: var(--orange); color: var(--orange-ink); box-shadow: 0 10px 22px -10px rgba(5,20,12,.55); }
+.btn-primary:hover { background: var(--orange-hot); border-color: var(--orange-hot); transform: translateY(-2px); box-shadow: 0 16px 28px -12px rgba(5,20,12,.6); }
+.btn-ghost { background: transparent; color: var(--paper); }
+.btn-ghost:hover { background: rgba(242,241,230,.1); transform: translateY(-2px); }
+.btn:active { transform: translateY(1px); }
+
+/* ===== Top bar ===== */
+.top { position: absolute; top: 0; left: 0; right: 0; z-index: 3; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.mark { font-weight: 900; font-size: 22px; letter-spacing: -0.01em; text-transform: uppercase; color: var(--paper); text-decoration: none; }
+.mark b { color: var(--orange); }
+.top-call { color: var(--paper); text-decoration: none; font-weight: 700; font-size: 15px; display: inline-flex; gap: 8px; align-items: center; padding: 8px 0; }
+.top-call svg { width: 18px; height: 18px; color: var(--orange); }
+
+/* ===== Hero (autumn) ===== */
+.hero {
+  position: relative; overflow: hidden; color: var(--paper);
+  background: linear-gradient(180deg, var(--dusk) 0%, #1b3d36 38%, var(--pine) 70%);
+  min-height: min(100svh, 940px);
+  padding: 116px 0 clamp(120px, 16vw, 170px);
+  display: flex; align-items: center;
+}
+.hero-grid { position: relative; z-index: 2; display: grid; gap: 40px; align-items: center; }
+.hero-grid > * { min-width: 0; }
+.hero h1 { font-size: clamp(46px, 9.2vw, 104px); }
+.hero h1 span { display: block; }
+.hero h1 .hl { color: var(--orange); }
+.hero .name { margin-top: 22px; font-weight: 800; font-size: clamp(17px, 2.1vw, 22px); color: var(--paper); }
+.hero .pitch { margin-top: 6px; font-size: clamp(14px, 3.9vw, 20px); color: var(--paper-soft); white-space: nowrap; }
+.hero .btns { margin-top: 30px; }
+.hero .note { margin-top: 14px; font-size: 14px; color: var(--paper-soft); }
+.hero .note a { font-weight: 700; color: var(--paper); text-underline-offset: 3px; }
+
+/* message preview: what the text button opens */
+.msg { display: none; }
+@media (min-width: 960px) {
+  .hero-grid { grid-template-columns: 1.35fr 1fr; }
+  .msg { display: block; justify-self: end; width: min(100%, 380px); }
+}
+.msg-card {
+  background: rgba(242,241,230,.96); color: var(--ink); border-radius: 26px; padding: 22px 22px 18px;
+  box-shadow: 0 30px 60px -24px rgba(5,20,12,.7), 0 8px 18px -8px rgba(5,20,12,.4);
+  transform: rotate(1.5deg);
+}
+.msg-to { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink-soft); padding-bottom: 14px; }
+.msg-av { width: 34px; height: 34px; border-radius: 50%; background: var(--pine); color: var(--orange); display: grid; place-items: center; font-weight: 900; font-size: 13px; }
+.msg-to strong { display: block; color: var(--ink); font-size: 15px; }
+.bubble {
+  background: #2f7d4a; color: #fff; border-radius: 20px 20px 6px 20px; padding: 12px 15px;
+  font-size: 15px; line-height: 1.45; margin-left: 28px; white-space: pre-line;
+}
+.msg-cap { margin-top: 12px; font-size: 13px; color: var(--ink-soft); text-align: right; }
+
+/* ===== Divider strips (next section grows up as a living edge) ===== */
+.edge { position: relative; height: 64px; margin-top: -1px; }
+.edge-sage-slate { background: var(--sage); }
+.edge-snow-pine { background: var(--snow); height: 80px; }
+
+/* ===== Services ===== */
+.services { background: var(--sage); padding: clamp(56px, 8vw, 96px) 0 clamp(48px, 6vw, 72px); }
+.sec-head h2 { font-size: clamp(36px, 6vw, 68px); color: var(--ink); }
+.sec-head p { margin-top: 14px; max-width: 46ch; color: var(--ink-soft); font-size: 18px; }
+.groups { margin-top: clamp(36px, 5vw, 56px); display: grid; gap: 44px; }
+@media (min-width: 860px) { .groups { grid-template-columns: 1fr 1fr; gap: 56px; } }
+.group-h { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; }
+.group-h svg { width: 30px; height: 30px; flex: none; color: #2f6b3a; }
+.group-h h3 { font-size: clamp(24px, 3vw, 32px); }
+.group-sub { color: var(--ink-soft); margin-bottom: 14px; }
+.rows { list-style: none; margin: 0; padding: 0; }
+.row {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 58px; padding: 10px 4px; text-decoration: none; font-weight: 700; font-size: 18px;
+  border-top: 1px solid rgba(19,48,31,.16);
+  transition: padding .3s var(--ease-out), color .2s;
+}
+.rows li:last-child .row { border-bottom: 1px solid rgba(19,48,31,.16); }
+.go { width: 34px; height: 34px; flex: none; border-radius: 50%; display: grid; place-items: center; background: rgba(19,48,31,.08); color: var(--ink); transition: background-color .2s, color .2s, transform .3s var(--ease-out); }
+.go svg { width: 16px; height: 16px; }
+.row:hover { padding-left: 12px; }
+.row:hover .go { background: var(--orange); color: var(--orange-ink); transform: translateX(-4px); }
+.rows-note { margin-top: 18px; font-size: 15px; color: var(--ink-soft); }
+
+/* ===== Winter ===== */
+.winter { position: relative; overflow: hidden; background: var(--slate); color: var(--paper); padding: clamp(40px, 6vw, 72px) 0 clamp(130px, 14vw, 170px); }
+.winter .wrap { position: relative; z-index: 2; }
+.winter .group-h svg { color: #9fc3e0; }
+.winter .group-h h3 { font-size: clamp(36px, 6vw, 68px); }
+.winter .group-sub { color: var(--frost-soft); font-size: 18px; }
+.winter .rows { margin-top: 18px; }
+@media (min-width: 860px) { .winter .rows { display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; } .winter .rows li:nth-last-child(2) .row { border-bottom: 1px solid rgba(242,241,230,.18); } }
+.winter .row { border-color: rgba(242,241,230,.18); }
+.winter .rows li:last-child .row { border-bottom-color: rgba(242,241,230,.18); }
+.winter .go { background: rgba(242,241,230,.12); color: var(--paper); }
+
+/* ===== How it works ===== */
+.how { background: var(--snow); padding: clamp(40px, 6vw, 72px) 0 clamp(40px, 6vw, 64px); }
+.steps { list-style: none; margin: clamp(32px, 5vw, 48px) 0 0; padding: 0; display: grid; gap: 28px; }
+@media (min-width: 860px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+.step { display: grid; grid-template-columns: auto 1fr; gap: 4px 18px; align-items: baseline; }
+.step-n { grid-row: span 2; font-weight: 900; font-size: clamp(56px, 7vw, 84px); line-height: .8; color: var(--orange); }
+.step h3 { font-size: 24px; color: var(--ink); }
+.step p { color: var(--ink-soft); max-width: 34ch; }
+
+/* ===== Area + close (pine, leaves) ===== */
+.close { position: relative; overflow: hidden; background: var(--pine); color: var(--paper); padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); }
+.close .wrap { position: relative; z-index: 2; }
+.area { display: grid; gap: 14px; padding-bottom: clamp(48px, 7vw, 88px); }
+.area-k { font-weight: 800; color: var(--paper-soft); font-size: 17px; }
+.area h2 { font-size: clamp(42px, 8.4vw, 112px); color: var(--paper); }
+.area h2 span { color: var(--orange); }
+.area p { color: var(--paper-soft); max-width: 48ch; font-size: 18px; }
+.final { border-top: 1px solid rgba(242,241,230,.16); padding-top: clamp(40px, 6vw, 64px); display: grid; gap: 28px; align-items: end; }
+@media (min-width: 900px) { .final { grid-template-columns: 1fr auto; } }
+.final h2 { font-size: clamp(54px, 11vw, 150px); }
+.final .final-sub { margin-top: 10px; font-weight: 800; font-size: clamp(17px, 2vw, 22px); }
+.final .final-p { margin-top: 6px; color: var(--paper-soft); }
+
+/* ===== Footer ===== */
+footer { background: var(--pine-deep); color: var(--paper-soft); padding: 28px 0 calc(28px + env(safe-area-inset-bottom)); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer strong { color: var(--paper); }
+footer a { color: var(--paper); font-weight: 700; text-underline-offset: 3px; }
+
+/* ===== Sticky text bar (phones) ===== */
+.sticky {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(18,47,31,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 -10px 30px -12px rgba(5,20,12,.6);
+  transform: translateY(110%); visibility: hidden; transition: transform .45s var(--ease-out), visibility 0s .45s;
+}
+.sticky.on { transform: none; visibility: visible; transition: transform .45s var(--ease-out), visibility 0s; }
+.sticky .btn { width: 100%; }
+@media (min-width: 720px) { .sticky { display: none; } }
+@media (max-width: 719px) { body.has-sticky footer { padding-bottom: calc(100px + env(safe-area-inset-bottom)); } }
+
+/* ===== Phone tuning ===== */
+@media (max-width: 560px) {
+  .hero { padding-top: 92px; align-items: flex-start; min-height: 0; }
+  .hero .btns { flex-direction: column; }
+  .hero .btn, .final .btn { width: 100%; }
+  .final .btns { flex-direction: column; }
+  .top-call span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A one-man handyman's page that feels like his actual workplace: the yards and driveways of Ocean County through the seasons. Refuses the contractor template (stock toolbelt photo, icon cards, quote form).
+OWN-WORLD: Dusk-blue to pine-green autumn ground, work-glove orange as the only action color, sage lawn and slate-blue winter bands, snow-white step band. Living grass whose front blades are the next section's color; falling leaves; a winter band with snow and a drift you can dig through. System sans, heavy uppercase display.
+STORY: Homeowner sees "Fix it. Mow it. Shovel it." = one person for inside, yard and winter; scans the list; taps the job they need; a pre-filled text to Dev opens.
+FIRST VIEWPORT: Headline left at ~100px, name + descriptor under it, orange "Text for a free estimate" + same-size "Call" pill; desktop right column shows the exact text the button sends; grass band across the bottom, leaves drifting behind text.
+FORM: Seasonal yard field (own list #1, chosen by pitch-site rule over roll #6 "sawdust workbench"); seed e7ffe03a.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Handy Dev, home">Handy <b>Dev</b></a>
+    <a class="top-call" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg><span>(609) 467-9972</span><b class="sr">Call Handy Dev</b></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <canvas class="field" id="f-hero" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="hero-h"><span>Fix it.</span><span>Mow it.</span><span class="hl">Shovel it.</span></h1>
+      <p class="name">Handy Dev — Handyman &amp; Property Maintenance</p>
+      <p class="pitch" data-fit>Fair prices and free estimates in Ocean County, NJ.</p>
+      <div class="btns" id="hero-actions">
+        <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
+        <a class="btn btn-ghost" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>Call (609) 467-9972</a>
+      </div>
+      <p class="note">Texts and calls: <a href="tel:+16094679972">(609) 467-9972</a></p>
+    </div>
+    <div class="msg" aria-hidden="true">
+      <div class="msg-card">
+        <div class="msg-to"><span class="msg-av">HD</span><span><strong>Handy Dev</strong>(609) 467-9972</span></div>
+        <div class="bubble" id="msg-preview"></div>
+        <p class="msg-cap">Tap “Text for a free estimate” and this is ready to send.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="svc-h">Inside and out</h2>
+      <p>Tap any job to text Dev about it. The message comes pre-filled; just add your town and when you need it.</p>
+    </div>
+    <div class="groups">
+      <div>
+        <div class="group-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26 18.5 13.5"/><path d="M15 7.5c3-3 7.5-3 10 0l-4.5 1.5 3 3-4 4-6.5-6.5Z"/></svg><h3>Handyman</h3></div>
+        <p class="group-sub">Fix-ups and small jobs around the house.</p>
+        <ul class="rows">
+          <li><a class="row sms" href="sms:+16094679972" data-job="general home repairs"><span>General home repairs</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="door repair"><span>Doors</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="trim caulking"><span>Trim caulking</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="furniture assembly"><span>Furniture assembly</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="light repairs"><span>Light repairs</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="an odd job"><span>Odd jobs</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+        </ul>
+        <p class="rows-note">Don't see your job? Text Dev and ask.</p>
+      </div>
+      <div>
+        <div class="group-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 25C7 14 14 7 26 6c0 12-7 19-17 19"/><path d="M7 25 18 14"/></svg><h3>Outdoor &amp; Yard</h3></div>
+        <p class="group-sub">Lawn, leaves, gutters and power washing.</p>
+        <ul class="rows">
+          <li><a class="row sms" href="sms:+16094679972" data-job="lawn mowing"><span>Lawn mowing</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="trimming and edging"><span>Trimming and edging</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="a yard cleanup"><span>Yard cleanups</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="leaf removal"><span>Leaf removal</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="brush and debris cleanup"><span>Brush and debris cleanup</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="gutter cleaning"><span>Gutter cleaning</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+          <li><a class="row sms" href="sms:+16094679972" data-job="power washing"><span>Power washing</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="edge edge-sage-slate" aria-hidden="true"><canvas class="field" id="f-edge1"></canvas></div>
+
+<section class="winter" id="winter" aria-labelledby="win-h">
+  <canvas class="field" id="f-winter" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="group-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4v24M5.6 10l20.8 12M5.6 22l20.8-12"/><path d="m12.5 5.5 3.5 3 3.5-3M12.5 26.5l3.5-3 3.5 3"/></svg><h3 id="win-h">Winter</h3></div>
+    <p class="group-sub">When it snows, Dev clears it.</p>
+    <ul class="rows">
+      <li><a class="row sms" href="sms:+16094679972" data-job="snow removal"><span>Snow removal</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+      <li><a class="row sms" href="sms:+16094679972" data-job="driveway and walkway clearing"><span>Driveway and walkway clearing</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+      <li><a class="row sms" href="sms:+16094679972" data-job="salting and ice treatment"><span>Salting and ice treatment</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+      <li><a class="row sms" href="sms:+16094679972" data-job="storm cleanup"><span>Storm cleanup</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="how-h">How it works</h2></div>
+    <ol class="steps">
+      <li class="step"><span class="step-n" aria-hidden="true">1</span><h3>Text or call</h3><p>Tell Dev what needs doing and where. A photo of the job helps.</p></li>
+      <li class="step"><span class="step-n" aria-hidden="true">2</span><h3>Free estimate</h3><p>You get a fair price up front, at no cost.</p></li>
+      <li class="step"><span class="step-n" aria-hidden="true">3</span><h3>Job done right</h3><p>Dev does the work, and you can cross it off the list.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="edge edge-snow-pine" aria-hidden="true"><canvas class="field" id="f-edge2"></canvas></div>
+
+<section class="close" id="area" aria-labelledby="area-h">
+  <canvas class="field" id="f-close" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="area">
+      <p class="area-k">Service area</p>
+      <h2 id="area-h">Ocean County, <span>NJ</span></h2>
+      <p>Dev is local. Not sure if your town is in range? Send a text and ask.</p>
+    </div>
+    <div class="final">
+      <div>
+        <h2>Handy Dev</h2>
+        <p class="final-sub">Handyman &amp; Property Maintenance</p>
+        <p class="final-p">Fair prices, free estimates.</p>
+      </div>
+      <div class="btns" id="close-actions">
+        <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
+        <a class="btn btn-ghost" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>Call (609) 467-9972</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Handy Dev</strong> · <a href="tel:+16094679972">(609) 467-9972</a> · Ocean County, NJ</span>
+    <span>Demo one-pager — free sample.</span>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
+</div>
+
+<script>
+/* ===== Text links: pre-filled messages ===== */
+(function () {
+  var PHONE = '+16094679972';
+  function body(job) {
+    return job
+      ? 'Hi Dev! I found your website. I\'d like a free estimate for ' + job + '.\nTown: \nWhen: '
+      : 'Hi Dev! I found your website. I\'d like a free estimate.\nJob: \nTown: \nWhen: ';
+  }
+  document.querySelectorAll('a.sms').forEach(function (a) {
+    a.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(body(a.getAttribute('data-job')));
+  });
+  var prev = document.getElementById('msg-preview');
+  if (prev) prev.textContent = body('');
+})();
+
+/* ===== Pitch line: one line until it would get too small, then wrap ===== */
+(function () {
+  var MAX = 20, MIN = 14;
+  var els = document.querySelectorAll('[data-fit]');
+  function fit() {
+    els.forEach(function (el) {
+      el.style.whiteSpace = 'nowrap'; el.style.fontSize = MAX + 'px';
+      var w = el.parentNode.clientWidth, s = el.scrollWidth;
+      var size = s > w ? Math.floor(MAX * w / s) : MAX;
+      el.style.fontSize = size + 'px';
+      while (size > MIN && el.scrollWidth > el.clientWidth) el.style.fontSize = --size + 'px';
+      if (el.scrollWidth > el.clientWidth) el.style.whiteSpace = 'normal';
+    });
+  }
+  fit(); addEventListener('resize', fit); addEventListener('load', fit);
+})();
+
+/* ===== Sticky text bar: phones, hidden while hero/close buttons show ===== */
+(function () {
+  var bar = document.getElementById('sticky');
+  var seen = new Map();
+  document.body.classList.add('has-sticky');
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { seen.set(e.target, e.isIntersecting); });
+    var any = false; seen.forEach(function (v) { any = any || v; });
+    bar.classList.toggle('on', !any);
+  });
+  io.observe(document.getElementById('hero-actions'));
+  io.observe(document.getElementById('close-actions'));
+})();
+
+/* ===== Shared loop + pointer (mouse and finger) ===== */
+(function () {
+  var fns = new Set(), raf = 0, last = 0;
+  var P = { x: -9999, y: -9999, vx: 0, vy: 0, t: 0 };
+  function tick(now) {
+    var dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
+    P.vx *= 0.88; P.vy *= 0.88;
+    fns.forEach(function (f) { f(now / 1000, dt); });
+    raf = fns.size ? requestAnimationFrame(tick) : 0;
+  }
+  function move(x, y) {
+    var now = performance.now(), gap = now - P.t;
+    if (P.t && gap < 120) {
+      var d = Math.max(8, gap) / 1000;
+      P.vx = P.vx * 0.4 + 0.6 * (x - P.x) / d;
+      P.vy = P.vy * 0.4 + 0.6 * (y - P.y) / d;
+    } else { P.vx = 0; P.vy = 0; }
+    P.x = x; P.y = y; P.t = now;
+  }
+  function away() { P.x = -9999; P.y = -9999; P.t = 0; }
+  addEventListener('pointermove', function (e) { move(e.clientX, e.clientY); }, { passive: true });
+  addEventListener('touchstart', function (e) { var t = e.touches[0]; if (t) move(t.clientX, t.clientY); }, { passive: true });
+  addEventListener('touchmove', function (e) { var t = e.touches[0]; if (t) move(t.clientX, t.clientY); }, { passive: true });
+  addEventListener('touchend', function () { setTimeout(away, 250); }, { passive: true });
+  document.addEventListener('pointerleave', away);
+  addEventListener('blur', away);
+  window.HD = {
+    P: P,
+    reduced: matchMedia('(prefers-reduced-motion: reduce)').matches,
+    phone: matchMedia('(max-width: 640px)').matches,
+    add: function (f) { fns.add(f); if (!raf) { last = performance.now(); raf = requestAnimationFrame(tick); } },
+    remove: function (f) { fns.delete(f); }
+  };
+})();
+
+/* ===== Living field: grass / snow drift ground + leaves / snow particles =====
+   One renderer for every season band. Tunables up top. */
+(function () {
+  var T = {
+    WIND_SPEED: 1,          // multiplies all sway speeds
+    BLADE_GAP: 5,           // px between blades (desktop)
+    BLADE_GAP_PHONE: 6.5,
+    PUSH_RADIUS: 90,        // pointer reach on blades / drift
+    PUSH_FORCE: 1100,
+    SPRING: 38, DAMP: 6.5,  // blades spring back with a small wobble
+    LEAF_RADIUS: 95,
+    DRIFT_SPRING: 14, DRIFT_DAMP: 4.5
+  };
+  var P = HD.P, R = Math.random;
+
+  function wind(x, t) {
+    var s = T.WIND_SPEED;
+    return Math.sin(x * 0.009 + t * 2.2 * s) * 0.5
+         + Math.sin(x * 0.023 - t * 3.1 * s) * 0.22
+         + Math.sin(x * 0.0031 + t * 0.9 * s) * 0.7 * (0.55 + 0.45 * Math.sin(t * 0.37 * s));
+  }
+
+  /* --- Leaf and flake sprites drawn once --- */
+  var LEAF_COLORS = ['#e2711d', '#c9501c', '#e9a62b', '#b9862e', '#d8622a'];
+  function flakeSprite(r) {
+    var c = document.createElement('canvas'), d = Math.ceil(r * 2 + 2) * 2;
+    c.width = c.height = d; var g = c.getContext('2d');
+    var gr = g.createRadialGradient(d * 0.42, d * 0.4, 0, d / 2, d / 2, d / 2);
+    gr.addColorStop(0, '#ffffff'); gr.addColorStop(0.65, '#e9f1f8'); gr.addColorStop(1, 'rgba(190,210,228,0)');
+    g.fillStyle = gr; g.beginPath(); g.arc(d / 2, d / 2, d / 2, 0, 6.283); g.fill();
+    return c;
+  }
+  var FLAKES = [flakeSprite(2), flakeSprite(3), flakeSprite(4.5)];
+
+  function drawLeaf(g, p) {
+    var s = p.s;
+    g.save(); g.globalAlpha = p.a;
+    g.translate(p.x, p.y); g.rotate(p.r); g.scale(1, 0.35 + 0.65 * Math.abs(Math.cos(p.flip)));
+    g.fillStyle = p.c;
+    g.beginPath(); g.moveTo(0, -s);
+    g.bezierCurveTo(s * 0.75, -s * 0.55, s * 0.62, s * 0.5, 0, s);
+    g.bezierCurveTo(-s * 0.62, s * 0.5, -s * 0.75, -s * 0.55, 0, -s); g.fill();
+    g.fillStyle = 'rgba(60,20,0,.18)';  // shaded half gives the leaf body
+    g.beginPath(); g.moveTo(0, -s);
+    g.bezierCurveTo(s * 0.75, -s * 0.55, s * 0.62, s * 0.5, 0, s); g.closePath(); g.fill();
+    g.restore();
+  }
+
+  function Field(canvas, o) {
+    var g = canvas.getContext('2d'), W = 0, H = 0, dpr = 1;
+    var blades = [], groups = [], drift = [], parts = [];
+    var rect = null, visible = false;
+
+    function build() {
+      var r = canvas.getBoundingClientRect();
+      dpr = Math.min(2, devicePixelRatio || 1);
+      W = r.width; H = r.height;
+      canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+      blades = []; groups = []; drift = [];
+      if (o.grass) {
+        var gap = HD.phone ? T.BLADE_GAP_PHONE : T.BLADE_GAP;
+        o.grass.forEach(function (L, li) {
+          for (var x = -12; x < W + 12; x += gap * (0.55 + R() * 0.9)) {
+            blades.push({ x: x, h: L.h[0] + R() * (L.h[1] - L.h[0]), w: L.w * (0.75 + R() * 0.5),
+              lean: (R() - 0.5) * 0.3, ph: R() * 6.283, L: li, c: (R() * L.c.length) | 0, o: 0, v: 0 });
+          }
+        });
+        o.grass.forEach(function (L, li) { L.c.forEach(function (col, ci) {
+          groups.push({ li: li, col: col, list: blades.filter(function (b) { return b.L === li && b.c === ci; }) });
+        }); });
+      }
+      if (o.drift) {
+        for (var x = -20; x <= W + 20; x += 12) drift.push({ x: x, o: 0, v: 0 });
+      }
+      if (o.parts && !parts.length) {
+        var n = HD.phone ? o.parts.phone : o.parts.desk;
+        for (var i = 0; i < n; i++) parts.push(spawn({}, true));
+      }
+      draw(performance.now() / 1000, 0);
+    }
+
+    function surface(x, t, layer) {   // snow drift top edge (y), layer 0 back, 1 front
+      var D = o.drift, k = layer ? 0 : 1.7;
+      return H - D.h[layer] - Math.sin(x * 0.006 + t * 0.9 + k) * D.amp
+        - Math.sin(x * 0.017 - t * 1.4 + k) * D.amp * 0.45 - Math.sin(x * 0.041 + t * 2.1) * D.amp * 0.18;
+    }
+    function driftOffset(x) {
+      var i = Math.max(0, Math.min(drift.length - 1, Math.round((x + 20) / 12)));
+      return drift.length ? drift[i].o : 0;
+    }
+
+    function spawn(p, anywhere) {
+      if (o.parts.kind === 'leaf') {
+        p.s = 7 + R() * 7; p.c = LEAF_COLORS[(R() * LEAF_COLORS.length) | 0];
+        p.flip = R() * 6.283; p.r = R() * 6.283;
+      } else { p.k = (R() * 3) | 0; p.s = [2, 3, 4.5][p.k]; }
+      p.x = R() * W; p.y = anywhere ? R() * H * 0.85 : -20 - R() * 60;
+      p.vx = 0; p.vy = 0; p.ph = R() * 6.283; p.a = 1; p.rest = 0; p.state = 0; // 0 fall, 1 resting, 2 fading
+      p.floor = H - (o.parts.floor ? o.parts.floor[0] + R() * (o.parts.floor[1] - o.parts.floor[0]) : 0);
+      return p;
+    }
+
+    function step(t, dt) {
+      rect = canvas.getBoundingClientRect();
+      var px = P.x - rect.left, py = P.y - rect.top;
+      var near = px > -T.PUSH_RADIUS && px < W + T.PUSH_RADIUS && py > -T.PUSH_RADIUS && py < H + T.PUSH_RADIUS;
+
+      // blades: wind sway + pointer push, spring back with wobble
+      for (var i = 0; i < blades.length; i++) {
+        var b = blades[i];
+        if (near && b.L > 0) {
+          var bx = b.x + b.o * 0.5, by = H - b.h * 0.6, dx = bx - px, dy = by - py;
+          if (Math.abs(dx) < T.PUSH_RADIUS && dy > -b.h && dy < T.PUSH_RADIUS) {
+            var f = 1 - Math.abs(dx) / T.PUSH_RADIUS;
+            b.v += ((dx < 0 ? -1 : 1) * f * T.PUSH_FORCE + P.vx * f * 0.9) * dt;
+          }
+        }
+        b.v += (-T.SPRING * b.o - T.DAMP * b.v) * dt;
+        b.o += b.v * dt;
+        if (b.o > b.h * 0.9) b.o = b.h * 0.9; else if (b.o < -b.h * 0.9) b.o = -b.h * 0.9;
+      }
+
+      // drift: pointer digs a trench that slowly fills back in
+      for (var j = 0; j < drift.length; j++) {
+        var d = drift[j];
+        if (near) {
+          var ddx = d.x - px, sy = surface(d.x, t, 1) + d.o;
+          if (Math.abs(ddx) < T.PUSH_RADIUS * 0.8 && py > sy - 50 && py < H) {
+            var ff = 1 - Math.abs(ddx) / (T.PUSH_RADIUS * 0.8);
+            d.v += ff * 900 * dt;
+          }
+        }
+        d.v += (-T.DRIFT_SPRING * d.o - T.DRIFT_DAMP * d.v) * dt;
+        d.o += d.v * dt; if (d.o > o.drift.h[1] * 0.85) d.o = o.drift.h[1] * 0.85;
+      }
+
+      // particles
+      for (var k = 0; k < parts.length; k++) {
+        var p = parts[k], leaf = o.parts.kind === 'leaf';
+        if (near) {
+          var qx = p.x - px, qy = p.y - py, dd = Math.sqrt(qx * qx + qy * qy) || 1;
+          if (dd < T.LEAF_RADIUS) {
+            var fp = 1 - dd / T.LEAF_RADIUS;
+            if (p.state === 1 && fp > 0.15) { // resting leaf kicked loose
+              p.state = 0; p.vy = -160 * fp - Math.abs(P.vy) * 0.25 - 60; p.rest = 0;
+            }
+            p.vx += (qx / dd * fp * 1500 + P.vx * fp * 2.2) * dt;
+            p.vy += (qy / dd * fp * 1500 + P.vy * fp * 2.2) * dt;
+          }
+        }
+        if (p.state === 1) {
+          p.rest -= dt; if (p.rest < 0) p.state = 2;
+        } else {
+          var tvx = Math.sin(t * (leaf ? 1.3 : 0.9) + p.ph) * (leaf ? 38 : 16) + wind(p.x, t) * (leaf ? 22 : 10);
+          var tvy = leaf ? 34 + p.s * 2.2 : 18 + p.s * 7;
+          p.vx += (tvx - p.vx) * 1.4 * dt; p.vy += (tvy - p.vy) * 1.2 * dt;
+          p.x += p.vx * dt; p.y += p.vy * dt;
+          if (leaf) { p.r += Math.sin(t * 1.7 + p.ph) * 2.2 * dt + p.vx * 0.004 * dt; p.flip += (2 + p.s * 0.1) * dt; }
+          var floor = o.drift ? surface(p.x, t, 1) + driftOffset(p.x) + 2 : p.floor;
+          if (p.state === 0 && p.y >= floor && p.vy > 0) {
+            if (leaf && o.parts.floor) { p.y = floor; p.vx = 0; p.vy = 0; p.state = 1; p.rest = 3 + R() * 5; }
+            else p.state = 2;
+          }
+          if (p.x < -40) p.x = W + 30; else if (p.x > W + 40) p.x = -30;
+          if (p.y < -120) p.vy = Math.abs(p.vy);
+        }
+        if (p.state === 2) { p.a -= dt * (leaf ? 1.2 : 2.5); if (p.a <= 0) spawn(p, false); }
+      }
+    }
+
+    function draw(t) {
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+      g.clearRect(0, 0, W, H);
+      var split = o.grass ? o.grass.length - 2 : 0; // leaves sit between back and front grass
+      drawGrass(t, 0, split);
+      if (o.drift) drawDrift(t, 0);
+      if (o.parts) drawParts();
+      if (o.drift) drawDrift(t, 1);
+      drawGrass(t, split, o.grass ? o.grass.length : 0);
+      if (o.base) { g.fillStyle = o.base; g.fillRect(0, H - 3, W, 3); }
+    }
+    function drawGrass(t, from, to) {
+      for (var gi = 0; gi < groups.length; gi++) {
+        var G = groups[gi]; if (G.li < from || G.li >= to) continue;
+        g.fillStyle = G.col; g.beginPath();
+        for (var i = 0; i < G.list.length; i++) {
+          var b = G.list[i], bend = (wind(b.x + b.ph * 6, t) * 0.24 + b.lean) * b.h + b.o;
+          var tipX = b.x + bend, tipY = H - b.h + Math.abs(bend) * 0.22;
+          g.moveTo(b.x - b.w, H + 1);
+          g.quadraticCurveTo(b.x - b.w * 0.4 + bend * 0.35, H - b.h * 0.55, tipX, tipY);
+          g.quadraticCurveTo(b.x + b.w * 0.4 + bend * 0.35, H - b.h * 0.55, b.x + b.w, H + 1);
+        }
+        g.fill();
+      }
+    }
+    function drawDrift(t, layer) {
+      g.fillStyle = o.drift.c[layer]; g.beginPath(); g.moveTo(-20, H + 2);
+      for (var i = 0; i < drift.length; i++) {
+        var d = drift[i]; g.lineTo(d.x, surface(d.x, t, layer) + (layer ? d.o : d.o * 0.6));
+      }
+      g.lineTo(W + 20, H + 2); g.closePath(); g.fill();
+    }
+    function drawParts() {
+      for (var i = 0; i < parts.length; i++) {
+        var p = parts[i];
+        if (o.parts.kind === 'leaf') drawLeaf(g, p);
+        else { var sp = FLAKES[p.k], s = sp.width / 2; g.globalAlpha = p.a; g.drawImage(sp, p.x - s / 2, p.y - s / 2, s, s); g.globalAlpha = 1; }
+      }
+    }
+
+    function frame(t, dt) { step(t, dt); draw(t); }
+    build();
+    var lastW = innerWidth;
+    addEventListener('resize', function () { if (innerWidth !== lastW || !HD.phone) { lastW = innerWidth; build(); } });
+    if (HD.reduced) return;
+    new IntersectionObserver(function (es) {
+      visible = es[0].isIntersecting;
+      if (visible) HD.add(frame); else HD.remove(frame);
+    }, { rootMargin: '80px' }).observe(canvas);
+  }
+
+  var phone = HD.phone;
+  // Hero, autumn: back greens, mid light greens, front tufts in the services' sage
+  Field(document.getElementById('f-hero'), {
+    grass: [
+      { h: phone ? [50, 92] : [70, 128], w: 3.2, c: ['#1f4a2c', '#25562f', '#1c4229'] },
+      { h: phone ? [40, 76] : [52, 104], w: 3, c: ['#2f6b3a', '#3b7a3f', '#4a8a45'] },
+      { h: phone ? [26, 52] : [34, 70], w: 2.8, c: ['#8fb05a', '#a9c27a', '#7da24c'] },
+      { h: phone ? [12, 30] : [16, 40], w: 3.4, c: ['#e6ecd9', '#dfe7cf'] }
+    ],
+    parts: { kind: 'leaf', desk: 18, phone: 10, floor: [8, 46] },
+    base: '#e6ecd9'
+  });
+  // Sage -> slate: winter rolls in as a drift
+  Field(document.getElementById('f-edge1'), {
+    drift: { h: [30, 18], amp: 10, c: ['#9fb3c4', '#1f3447'] }, base: '#1f3447'
+  });
+  // Winter: snowfall and a drift you can dig through, front drift is next section's snow-white
+  Field(document.getElementById('f-winter'), {
+    drift: { h: phone ? [70, 46] : [96, 62], amp: 14, c: ['#9fb6c9', '#eef2f4'] },
+    parts: { kind: 'flake', desk: 90, phone: 45 },
+    base: '#eef2f4'
+  });
+  // Snow-white -> pine: spring grass grows back up into the close
+  Field(document.getElementById('f-edge2'), {
+    grass: [
+      { h: [34, 66], w: 3, c: ['#7da24c', '#8fb05a'] },
+      { h: [22, 48], w: 3, c: ['#2f6b3a', '#3b7a3f'] },
+      { h: [10, 30], w: 3.4, c: ['#173a26', '#1b4029'] }
+    ],
+    base: '#173a26'
+  });
+  // Close: leaves keep falling behind the service area and final call
+  Field(document.getElementById('f-close'), {
+    parts: { kind: 'leaf', desk: 12, phone: 7 }
+  });
+})();
+</script>
+</body>
+</html>
