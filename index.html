@@ -47,7 +47,9 @@ p { margin: 0; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ===== Buttons (pair: same height, same 2px outline) ===== */
-.btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.btns { display: flex; flex-direction: column; gap: 12px; }
+.btns .btn { width: 100%; }
+@media (min-width: 561px) { .btns { flex-direction: row; flex-wrap: wrap; } .btns .btn { width: auto; } }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 58px; padding: 0 26px; border-radius: 999px; border: 2px solid var(--paper);
@@ -57,37 +59,37 @@ p { margin: 0; }
 }
 .btn svg { width: 22px; height: 22px; flex: none; }
 .btn-primary { background: var(--orange); border-color: var(--orange); color: var(--orange-ink); box-shadow: 0 10px 22px -10px rgba(5,20,12,.55); }
-.btn-primary:hover { background: var(--orange-hot); border-color: var(--orange-hot); transform: translateY(-2px); box-shadow: 0 16px 28px -12px rgba(5,20,12,.6); }
-.btn-ghost { background: transparent; color: var(--paper); }
-.btn-ghost:hover { background: rgba(242,241,230,.1); transform: translateY(-2px); }
+@media (hover: hover) { .btn-primary:hover { background: var(--orange-hot); border-color: var(--orange-hot); transform: translateY(-2px); box-shadow: 0 16px 28px -12px rgba(5,20,12,.6); } }
+.btn-ghost { background: rgba(23,58,38,.88); color: var(--paper); }
+@media (hover: hover) { .btn-ghost:hover { background: #24472f; transform: translateY(-2px); } }
 .btn:active { transform: translateY(1px); }
 
 /* ===== Top bar ===== */
 .top { position: absolute; top: 0; left: 0; right: 0; z-index: 3; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.mark { font-weight: 900; font-size: 22px; letter-spacing: -0.01em; text-transform: uppercase; color: var(--paper); text-decoration: none; }
+.mark { font-weight: 900; font-size: 22px; letter-spacing: -0.01em; text-transform: uppercase; color: var(--paper); text-decoration: none; display: inline-block; line-height: 44px; }
 .mark b { color: var(--orange); }
-.top-call { color: var(--paper); text-decoration: none; font-weight: 700; font-size: 15px; display: inline-flex; gap: 8px; align-items: center; padding: 8px 0; }
-.top-call svg { width: 18px; height: 18px; color: var(--orange); }
+.top-call { color: var(--paper); text-decoration: none; font-weight: 700; font-size: 16px; display: inline-flex; gap: 8px; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; margin-right: -12px; }
+.top-call span { display: none; }
+@media (min-width: 561px) { .top-call { margin-right: 0; } .top-call span { display: inline; } }
+.top-call svg { width: 20px; height: 20px; color: var(--orange); }
 
 /* ===== Hero (autumn) ===== */
 .hero {
   position: relative; overflow: hidden; color: var(--paper);
   background: linear-gradient(180deg, var(--dusk) 0%, #1b3d36 38%, var(--pine) 70%);
-  min-height: min(100svh, 940px);
-  padding: 116px 0 clamp(120px, 16vw, 170px);
-  display: flex; align-items: center;
+  padding: 84px 0 104px;
+  display: flex; align-items: flex-start;
 }
+@media (min-width: 561px) { .hero { min-height: min(100svh, 940px); padding: 116px 0 clamp(120px, 16vw, 170px); align-items: center; } }
 .hero-grid { position: relative; z-index: 2; display: grid; gap: 40px; align-items: center; }
 .hero-grid > * { min-width: 0; }
 .hero h1 { font-size: clamp(46px, 9.2vw, 104px); }
 .hero h1 span { display: block; }
 .hero h1 .hl { color: var(--orange); }
 .hero .name { margin-top: 22px; font-weight: 800; font-size: clamp(17px, 2.1vw, 22px); color: var(--paper); }
-.hero .pitch { margin-top: 6px; font-size: clamp(14px, 3.9vw, 20px); color: var(--paper-soft); white-space: nowrap; }
+.hero .pitch { text-wrap: balance; margin-top: 6px; font-size: clamp(14px, 3.9vw, 20px); color: var(--paper-soft); white-space: nowrap; }
 .hero .btns { margin-top: 30px; }
-.hero .note { margin-top: 14px; font-size: 14px; color: var(--paper-soft); }
-.hero .note a { font-weight: 700; color: var(--paper); text-underline-offset: 3px; }
 
 /* message preview: what the text button opens */
 .msg { display: none; }
@@ -137,7 +139,7 @@ p { margin: 0; }
 .go svg { width: 16px; height: 16px; }
 .row:hover > span:first-child { transform: translateX(8px); }
 .row:hover .go { background: var(--orange); color: var(--orange-ink); transform: translateX(-4px); }
-.rows-note { margin-top: 18px; font-size: 15px; color: var(--ink-soft); }
+.rows-note { margin-top: 18px; font-size: 16px; color: var(--ink-soft); }
 
 /* ===== Winter ===== */
 .winter { position: relative; overflow: hidden; background: var(--slate); color: var(--paper); padding: clamp(40px, 6vw, 72px) 0 clamp(130px, 14vw, 170px); }
@@ -175,10 +177,10 @@ p { margin: 0; }
 .final .final-p { margin-top: 6px; color: var(--paper-soft); }
 
 /* ===== Footer ===== */
-footer { background: var(--pine-deep); color: var(--paper-soft); padding: 28px 0 calc(28px + env(safe-area-inset-bottom)); font-size: 14px; }
+footer { background: var(--pine-deep); color: var(--paper-soft); padding: 24px 0 calc(24px + env(safe-area-inset-bottom)); font-size: 16px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 footer strong { color: var(--paper); }
-footer a { color: var(--paper); font-weight: 700; text-underline-offset: 3px; }
+footer a { color: var(--paper); font-weight: 700; text-underline-offset: 3px; display: inline-block; padding: 11px 0; }
 
 /* ===== Sticky text bar (phones) ===== */
 .sticky {
@@ -191,16 +193,9 @@ footer a { color: var(--paper); font-weight: 700; text-underline-offset: 3px; }
 .sticky.on { transform: none; visibility: visible; transition: transform .45s var(--ease-out), visibility 0s; }
 .sticky .btn { width: 100%; }
 @media (min-width: 720px) { .sticky { display: none; } }
-@media (max-width: 719px) { body.has-sticky footer { padding-bottom: calc(100px + env(safe-area-inset-bottom)); } }
+body.has-sticky footer { padding-bottom: calc(100px + env(safe-area-inset-bottom)); }
+@media (min-width: 720px) { body.has-sticky footer { padding-bottom: calc(24px + env(safe-area-inset-bottom)); } }
 
-/* ===== Phone tuning ===== */
-@media (max-width: 560px) {
-  .hero { padding-top: 92px; align-items: flex-start; min-height: 0; }
-  .hero .btns { flex-direction: column; }
-  .hero .btn, .final .btn { width: 100%; }
-  .final .btns { flex-direction: column; }
-  .top-call span { display: none; }
-}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
@@ -234,7 +229,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
         <a class="btn btn-ghost" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>Call (609) 467-9972</a>
       </div>
-      <p class="note">Texts and calls: <a href="tel:+16094679972">(609) 467-9972</a></p>
     </div>
     <div class="msg" aria-hidden="true">
       <div class="msg-card">
@@ -364,7 +358,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 /* ===== Pitch line: one line until it would get too small, then wrap ===== */
 (function () {
-  var MAX = 20, MIN = 14;
+  var MAX = 20, MIN = 16;
   var els = document.querySelectorAll('[data-fit]');
   function fit() {
     els.forEach(function (el) {
@@ -502,6 +496,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       if (o.drift) {
         for (var x = -20; x <= W + 20; x += 12) drift.push({ x: x, o: 0, v: 0 });
       }
+      if (o.parts && parts.length) parts.forEach(function (p) {   // re-seat after a resize
+        if (p.state === 1) p.state = 2;
+        if (p.x > W) p.x = R() * W;
+        p.floor = H - (o.parts.floor ? o.parts.floor[0] + R() * (o.parts.floor[1] - o.parts.floor[0]) : 0);
+      });
       if (o.parts && !parts.length) {
         var n = HD.phone ? o.parts.phone : o.parts.desk;
         for (var i = 0; i < n; i++) parts.push(spawn({}, true));
@@ -640,8 +639,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     function frame(t, dt) { step(t, dt); draw(t); }
     build();
-    var lastW = innerWidth;
-    addEventListener('resize', function () { if (innerWidth !== lastW || !HD.phone) { lastW = innerWidth; build(); } });
+    var lastW = W, lastH = H;
+    new ResizeObserver(function () {
+      var r = canvas.getBoundingClientRect();
+      if (Math.abs(r.width - lastW) < 1 && Math.abs(r.height - lastH) < 1) return;
+      lastW = r.width; lastH = r.height; build();
+    }).observe(canvas);
     if (HD.reduced) return;
     new IntersectionObserver(function (es) {
       visible = es[0].isIntersecting;
@@ -658,7 +661,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       { h: phone ? [26, 52] : [34, 70], w: 2.8, c: ['#8fb05a', '#a9c27a', '#7da24c'] },
       { h: phone ? [12, 30] : [16, 40], w: 3.4, c: ['#e6ecd9', '#dfe7cf'] }
     ],
-    parts: { kind: 'leaf', desk: 18, phone: 10, floor: [8, 46] },
+    parts: { kind: 'leaf', desk: 18, phone: 6, floor: [8, 46] },
     base: '#e6ecd9'
   });
   // Sage -> slate: winter rolls in as a drift
@@ -668,7 +671,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   // Winter: snowfall and a drift you can dig through, front drift is next section's snow-white
   Field(document.getElementById('f-winter'), {
     drift: { h: phone ? [70, 46] : [96, 62], amp: 14, c: ['#9fb6c9', '#eef2f4'] },
-    parts: { kind: 'flake', desk: 90, phone: 45 },
+    parts: { kind: 'flake', desk: 90, phone: 32 },
     base: '#eef2f4'
   });
   // Snow-white -> pine: spring grass grows back up into the close
@@ -682,7 +685,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   });
   // Close: leaves keep falling behind the service area and final call
   Field(document.getElementById('f-close'), {
-    parts: { kind: 'leaf', desk: 12, phone: 7 }
+    parts: { kind: 'leaf', desk: 12, phone: 5 }
   });
 })();
 </script>

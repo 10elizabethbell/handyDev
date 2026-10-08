@@ -2,5 +2,8 @@
 .claude/
 .impeccable/config.local.json
 .shoot-*
+brief.md
+BRIEF.md
 shots/
 src-assets/
+TRIGGER.md
