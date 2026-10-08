@@ -84,12 +84,13 @@ p { margin: 0; }
 @media (min-width: 561px) { .hero { min-height: min(100svh, 940px); padding: 116px 0 clamp(120px, 16vw, 170px); align-items: center; } }
 .hero-grid { position: relative; z-index: 2; display: grid; gap: 40px; align-items: center; }
 .hero-grid > * { min-width: 0; }
-.hero h1 { font-size: clamp(46px, 9.2vw, 104px); }
+.hero h1 { font-size: clamp(44px, 12.4vw, 96px); }
 .hero h1 span { display: block; }
 .hero h1 .hl { color: var(--orange); }
 .hero .name { margin-top: 22px; font-weight: 800; font-size: clamp(17px, 2.1vw, 22px); color: var(--paper); }
 .hero .pitch { text-wrap: balance; margin-top: 6px; font-size: clamp(14px, 3.9vw, 20px); color: var(--paper-soft); white-space: nowrap; }
-.hero .btns { margin-top: 30px; }
+.hero .promise { margin-top: 10px; font-size: 16px; font-weight: 700; color: var(--paper); }
+.hero .btns { margin-top: 26px; }
 
 /* message preview: what the text button opens */
 .msg { display: none; }
@@ -158,7 +159,7 @@ p { margin: 0; }
 .steps { list-style: none; margin: clamp(32px, 5vw, 48px) 0 0; padding: 0; display: grid; gap: 28px; }
 @media (min-width: 860px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
 .step { display: grid; grid-template-columns: auto 1fr; gap: 4px 18px; align-items: baseline; }
-.step-n { grid-row: span 2; font-weight: 900; font-size: clamp(56px, 7vw, 84px); line-height: .8; color: var(--orange); }
+.step-n { grid-row: span 2; font-weight: 900; font-size: clamp(56px, 7vw, 84px); line-height: .8; color: #2f6b3a; }
 .step h3 { font-size: 24px; color: var(--ink); }
 .step p { color: var(--ink-soft); max-width: 34ch; }
 
@@ -166,15 +167,16 @@ p { margin: 0; }
 .close { position: relative; overflow: hidden; background: var(--pine); color: var(--paper); padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); }
 .close .wrap { position: relative; z-index: 2; }
 .area { display: grid; gap: 14px; padding-bottom: clamp(48px, 7vw, 88px); }
-.area-k { font-weight: 800; color: var(--paper-soft); font-size: 17px; }
-.area h2 { font-size: clamp(42px, 8.4vw, 112px); color: var(--paper); }
-.area h2 span { color: var(--orange); }
+.area h2 { font-size: clamp(42px, 8vw, 96px); color: var(--paper); }
 .area p { color: var(--paper-soft); max-width: 48ch; font-size: 18px; }
 .final { border-top: 1px solid rgba(242,241,230,.16); padding-top: clamp(40px, 6vw, 64px); display: grid; gap: 28px; align-items: end; }
-@media (min-width: 900px) { .final { grid-template-columns: 1fr auto; } }
-.final h2 { font-size: clamp(54px, 11vw, 150px); }
+@media (min-width: 1100px) { .final { grid-template-columns: 1fr minmax(0, 560px); gap: 56px; } }
+.final h2 { font-size: clamp(54px, 8vw, 96px); }
 .final .final-sub { margin-top: 10px; font-weight: 800; font-size: clamp(17px, 2vw, 22px); }
-.final .final-p { margin-top: 6px; color: var(--paper-soft); }
+.dev-says { margin: 0 0 28px; }
+.dev-says blockquote { margin: 0; font-size: clamp(19px, 2vw, 24px); font-weight: 700; line-height: 1.38; color: var(--paper); max-width: 38ch; text-wrap: pretty; }
+.dev-says figcaption { margin-top: 12px; font-size: 16px; font-weight: 700; color: var(--paper-soft); }
+.dev-says figcaption::before { content: "— "; }
 
 /* ===== Footer ===== */
 footer { background: var(--pine-deep); color: var(--paper-soft); padding: 24px 0 calc(24px + env(safe-area-inset-bottom)); font-size: 16px; }
@@ -204,9 +206,9 @@ body.has-sticky footer { padding-bottom: calc(100px + env(safe-area-inset-bottom
 <body>
 <!--
 THESIS: A one-man handyman's page that feels like his actual workplace: the yards and driveways of Ocean County through the seasons. Refuses the contractor template (stock toolbelt photo, icon cards, quote form).
-OWN-WORLD: Dusk-blue to pine-green autumn ground, work-glove orange as the only action color, sage lawn and slate-blue winter bands, snow-white step band. Living grass whose front blades are the next section's color; falling leaves; a winter band with snow and a drift you can dig through. System sans, heavy uppercase display.
-STORY: Homeowner sees "Fix it. Mow it. Shovel it." = one person for inside, yard and winter; scans the list; taps the job they need; a pre-filled text to Dev opens.
-FIRST VIEWPORT: Headline left at ~100px, name + descriptor under it, orange "Text for a free estimate" + same-size "Call" pill; desktop right column shows the exact text the button sends; grass band across the bottom, leaves drifting behind text.
+OWN-WORLD: Dusk-blue to pine-green autumn ground, work-glove orange for actions plus the brand accent (wordmark DEV, headline's second line), sage lawn and slate-blue winter bands, snow-white step band. Living grass whose front blades are the next section's color; falling leaves; a winter band with snow and a drift you can dig through. System sans, heavy uppercase display.
+STORY: Homeowner sees Dev's own tagline "Small jobs. Big impact." and his promise in his words; "Fix it. Mow it. Shovel it." heads the list = one person for inside, yard and winter; the close lets Dev introduce himself; scans the list; taps the job they need; a pre-filled text to Dev opens.
+FIRST VIEWPORT: Two-line headline left at up to 96px, name + descriptor under it, orange "Text for a free estimate" + same-size "Call" pill; desktop right column shows the exact text the button sends; grass band across the bottom, leaves drifting behind text.
 FORM: Seasonal yard field (own list #1, chosen by pitch-site rule over roll #6 "sawdust workbench"); seed e7ffe03a.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
@@ -222,9 +224,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <canvas class="field" id="f-hero" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <h1 id="hero-h"><span>Fix it.</span><span>Mow it.</span><span class="hl">Shovel it.</span></h1>
+      <h1 id="hero-h"><span>Small jobs.</span><span class="hl">Big impact.</span></h1>
       <p class="name">Handy Dev — Handyman &amp; Property Maintenance</p>
-      <p class="pitch" data-fit>Fair prices and free estimates in Ocean County, NJ.</p>
+      <p class="pitch" data-fit>If it needs fixing, cleaning, or maintaining, I can help.</p>
+      <p class="promise">Reliable work. Fair pricing. Free estimates. Ocean County, NJ.</p>
       <div class="btns" id="hero-actions">
         <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
         <a class="btn btn-ghost" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>Call (609) 467-9972</a>
@@ -243,13 +246,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="services" id="services" aria-labelledby="svc-h">
   <div class="wrap">
     <div class="sec-head">
-      <h2 id="svc-h">Inside and out</h2>
+      <h2 id="svc-h">Fix it. Mow it. Shovel it.</h2>
       <p>Tap any job to text Dev about it. The message comes pre-filled; just add your town and when you need it.</p>
     </div>
     <div class="groups">
       <div>
         <div class="group-h"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26 18.5 13.5"/><path d="M15 7.5c3-3 7.5-3 10 0l-4.5 1.5 3 3-4 4-6.5-6.5Z"/></svg><h3>Handyman</h3></div>
-        <p class="group-sub">Fix-ups and small jobs around the house.</p>
+        <p class="group-sub">Fix-ups, light repairs and odd jobs around the house.</p>
         <ul class="rows">
           <li><a class="row sms" href="sms:+16094679972" data-job="general home repairs"><span>General home repairs</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
           <li><a class="row sms" href="sms:+16094679972" data-job="door repair"><span>Doors</span><span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></span></a></li>
@@ -299,7 +302,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li class="step"><span class="step-n" aria-hidden="true">1</span><h3>Text or call</h3><p>Tell Dev what needs doing and where. A photo of the job helps.</p></li>
       <li class="step"><span class="step-n" aria-hidden="true">2</span><h3>Free estimate</h3><p>You get a fair price up front, at no cost.</p></li>
-      <li class="step"><span class="step-n" aria-hidden="true">3</span><h3>Job done right</h3><p>Dev does the work, and you can cross it off the list.</p></li>
+      <li class="step"><span class="step-n" aria-hidden="true">3</span><h3>Job done right</h3><p>Dev does it right and leaves everything looking better than he found it.</p></li>
     </ol>
   </div>
 </section>
@@ -310,19 +313,23 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <canvas class="field" id="f-close" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="area">
-      <p class="area-k">Service area</p>
-      <h2 id="area-h">Ocean County, <span>NJ</span></h2>
+      <h2 id="area-h">Ocean County, NJ</h2>
       <p>Dev is local. Not sure if your town is in range? Send a text and ask.</p>
     </div>
     <div class="final">
       <div>
         <h2>Handy Dev</h2>
         <p class="final-sub">Handyman &amp; Property Maintenance</p>
-        <p class="final-p">Fair prices, free estimates.</p>
       </div>
-      <div class="btns" id="close-actions">
+      <div class="final-act">
+        <figure class="dev-says">
+          <blockquote>“My name is Dev, and I’m a young, hardworking local guy who’s been doing handyman, yard work, and general property maintenance for the past few years. I take pride in doing things right, keeping my prices fair, and leaving everything looking better than I found it.”</blockquote>
+          <figcaption>Dev</figcaption>
+        </figure>
+        <div class="btns" id="close-actions">
         <a class="btn btn-primary sms" href="sms:+16094679972" data-job=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14Z"/></svg>Text for a free estimate</a>
         <a class="btn btn-ghost" href="tel:+16094679972"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z"/></svg>Call (609) 467-9972</a>
+        </div>
       </div>
     </div>
   </div>
@@ -347,7 +354,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   function body(job) {
     return job
       ? 'Hi Dev! I found your website. I\'d like a free estimate for ' + job + '.\nTown: \nWhen: '
-      : 'Hi Dev! I found your website. I\'d like a free estimate.\nJob: \nTown: \nWhen: ';
+      : 'Hi Dev! I found your website. I\'d like a free estimate or to schedule a job.\nJob: \nTown: \nWhen: ';
   }
   document.querySelectorAll('a.sms').forEach(function (a) {
     a.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(body(a.getAttribute('data-job')));
