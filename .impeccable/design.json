@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T16:23:07+00:00",
+  "title": "Design System: Handy Dev",
+  "extensions": {
+    "colorMeta": {
+      "work-glove-orange": {
+        "role": "primary",
+        "displayName": "Work-Glove Orange",
+        "canonical": "#f28c28",
+        "tonalRamp": [
+          "#1b0400",
+          "#421600",
+          "#693000",
+          "#954a00",
+          "#c66400",
+          "#ed8821",
+          "#ffb36e",
+          "#ffe7ce"
+        ]
+      },
+      "work-glove-orange-hot": {
+        "role": "primary",
+        "displayName": "Hot Glove",
+        "canonical": "#ff9d3a",
+        "tonalRamp": [
+          "#1a0400",
+          "#3e1a00",
+          "#683100",
+          "#934c00",
+          "#c46600",
+          "#ea8a1e",
+          "#ffb260",
+          "#ffe7ca"
+        ]
+      },
+      "glove-ink": {
+        "role": "neutral",
+        "displayName": "Glove Ink",
+        "canonical": "#1d1a12",
+        "tonalRamp": [
+          "#0e0b05",
+          "#28251c",
+          "#454239",
+          "#656157",
+          "#868278",
+          "#a9a59a",
+          "#cdc9be",
+          "#f2eee3"
+        ]
+      },
+      "pine": {
+        "role": "neutral",
+        "displayName": "Pine",
+        "canonical": "#173a26",
+        "tonalRamp": [
+          "#001104",
+          "#082d1a",
+          "#284b36",
+          "#476b54",
+          "#688d75",
+          "#8ab097",
+          "#add4bb",
+          "#d2fae0"
+        ]
+      },
+      "pine-deep": {
+        "role": "neutral",
+        "displayName": "Pine Deep",
+        "canonical": "#122f1f",
+        "tonalRamp": [
+          "#001104",
+          "#0f2c1c",
+          "#2c4a38",
+          "#4b6957",
+          "#6c8b77",
+          "#8eae9a",
+          "#b1d3bd",
+          "#d6f8e2"
+        ]
+      },
+      "dusk": {
+        "role": "neutral",
+        "displayName": "Dusk",
+        "canonical": "#1d3a48",
+        "tonalRamp": [
+          "#000e1a",
+          "#0b2936",
+          "#294655",
+          "#486675",
+          "#688798",
+          "#8aabbb",
+          "#aecfe0",
+          "#d3f5ff"
+        ]
+      },
+      "moss": {
+        "role": "secondary",
+        "displayName": "Moss",
+        "canonical": "#2f6b3a",
+        "tonalRamp": [
+          "#001100",
+          "#003101",
+          "#0f5020",
+          "#34703f",
+          "#56935f",
+          "#79b681",
+          "#9ddba4",
+          "#c1ffc9"
+        ]
+      },
+      "sage-lawn": {
+        "role": "neutral",
+        "displayName": "Sage Lawn",
+        "canonical": "#e6ecd9",
+        "tonalRamp": [
+          "#090d02",
+          "#232719",
+          "#404435",
+          "#5f6453",
+          "#808574",
+          "#a2a896",
+          "#c6ccba",
+          "#ebf2de"
+        ]
+      },
+      "winter-slate": {
+        "role": "neutral",
+        "displayName": "Winter Slate",
+        "canonical": "#1f3447",
+        "tonalRamp": [
+          "#000c1c",
+          "#122739",
+          "#2f4458",
+          "#4d6479",
+          "#6e859c",
+          "#90a8bf",
+          "#b3cde5",
+          "#daf2ff"
+        ]
+      },
+      "snow-white": {
+        "role": "neutral",
+        "displayName": "Snow White",
+        "canonical": "#eef2f4",
+        "tonalRamp": [
+          "#090c0d",
+          "#232627",
+          "#3f4344",
+          "#5e6263",
+          "#7f8385",
+          "#a2a6a7",
+          "#c6cacc",
+          "#ebeff1"
+        ]
+      },
+      "yard-ink": {
+        "role": "neutral",
+        "displayName": "Yard Ink",
+        "canonical": "#13301f",
+        "tonalRamp": [
+          "#001104",
+          "#0f2c1b",
+          "#2c4a37",
+          "#4b6a56",
+          "#6c8b76",
+          "#8eae99",
+          "#b1d3bc",
+          "#d6f9e1"
+        ]
+      },
+      "yard-ink-soft": {
+        "role": "neutral",
+        "displayName": "Yard Ink Soft",
+        "canonical": "#3c5a44",
+        "tonalRamp": [
+          "#001102",
+          "#0f2c18",
+          "#2c4a35",
+          "#4b6a53",
+          "#6c8c74",
+          "#8eaf96",
+          "#b1d3b9",
+          "#d6f9de"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#f2f1e6",
+        "tonalRamp": [
+          "#0c0b05",
+          "#26251d",
+          "#43423a",
+          "#636258",
+          "#848379",
+          "#a6a69b",
+          "#cbcabf",
+          "#f0efe4"
+        ]
+      },
+      "paper-soft": {
+        "role": "neutral",
+        "displayName": "Paper Soft",
+        "canonical": "#c8d6c2",
+        "tonalRamp": [
+          "#060e03",
+          "#1e2919",
+          "#3b4636",
+          "#596654",
+          "#7a8775",
+          "#9caa97",
+          "#c0ceba",
+          "#e5f4df"
+        ]
+      },
+      "frost-soft": {
+        "role": "neutral",
+        "displayName": "Frost Soft",
+        "canonical": "#bfd0de",
+        "tonalRamp": [
+          "#030c16",
+          "#192731",
+          "#36444f",
+          "#546370",
+          "#758591",
+          "#97a7b5",
+          "#bbccda",
+          "#e0f1ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline and close headings; uppercase 900, capped at 96px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and the Winter band heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service group heads and step titles (steps fixed at 24px)."
+      },
+      "numeral": {
+        "displayName": "Step Numeral",
+        "purpose": "Moss step numbers spanning title and copy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section intros and band subtitles, 46-48ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button labels; rows use 700 at 18px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pill-lift",
+        "value": "0 10px 22px -10px rgba(5,20,12,.55)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "pill-lift-hover",
+        "value": "0 16px 28px -12px rgba(5,20,12,.6)",
+        "purpose": "Primary button on hover, with a 2px rise."
+      },
+      {
+        "name": "held-card",
+        "value": "0 30px 60px -24px rgba(5,20,12,.7), 0 8px 18px -8px rgba(5,20,12,.4)",
+        "purpose": "Message preview card, tilted 1.5deg."
+      },
+      {
+        "name": "bar-underglow",
+        "value": "0 -10px 30px -12px rgba(5,20,12,.6)",
+        "purpose": "Sticky text bar, with 10px backdrop blur."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "All movement: button rise, row slide, sticky bar."
+      },
+      {
+        "name": "color-change",
+        "value": ".2s",
+        "purpose": "Background and color transitions."
+      },
+      {
+        "name": "lift",
+        "value": ".25s",
+        "purpose": "Button rise and shadow."
+      },
+      {
+        "name": "row-slide",
+        "value": ".3s",
+        "purpose": "Row name and arrow circle slide."
+      },
+      {
+        "name": "bar-slide",
+        "value": ".45s",
+        "purpose": "Sticky bar enter and exit."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration .01ms; Field draws one still frame",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "pair",
+        "value": "561px"
+      },
+      {
+        "name": "canvas-phone (max)",
+        "value": "640px"
+      },
+      {
+        "name": "sticky-off",
+        "value": "720px"
+      },
+      {
+        "name": "columns",
+        "value": "860px"
+      },
+      {
+        "name": "hero-preview",
+        "value": "960px"
+      },
+      {
+        "name": "close-split",
+        "value": "1100px"
+      }
+    ],
+    "field": {
+      "renderer": "Field(canvas, options) inside the living-field IIFE in index.html",
+      "tunables": {
+        "WIND_SPEED": 1,
+        "BLADE_GAP": 5,
+        "BLADE_GAP_PHONE": 6.5,
+        "PUSH_RADIUS": 90,
+        "PUSH_FORCE": 1100,
+        "SPRING": 38,
+        "DAMP": 6.5,
+        "LEAF_RADIUS": 95,
+        "DRIFT_SPRING": 14,
+        "DRIFT_DAMP": 4.5
+      },
+      "options": {
+        "grass": "[{h:[min,max], w, c:[colors]}] back to front; last layer = next band's color",
+        "drift": "{h:[back,front], amp, c:[back, front]}; front = next band's color",
+        "parts": "{kind:'leaf'|'flake', desk, phone, floor?:[min,max]}",
+        "base": "3px seam strip in the next band's color"
+      },
+      "leafColors": [
+        "#e2711d",
+        "#c9501c",
+        "#e9a62b",
+        "#b9862e",
+        "#d8622a"
+      ],
+      "grassGreens": {
+        "back": [
+          "#1f4a2c",
+          "#25562f",
+          "#1c4229"
+        ],
+        "mid": [
+          "#2f6b3a",
+          "#3b7a3f",
+          "#4a8a45"
+        ],
+        "light": [
+          "#8fb05a",
+          "#a9c27a",
+          "#7da24c"
+        ]
+      },
+      "driftBack": [
+        "#9fb3c4",
+        "#9fb6c9"
+      ],
+      "instances": [
+        "hero: 4 grass layers to sage + resting leaves",
+        "edge sage-slate: drift to slate",
+        "winter: snowfall + drift to snow white",
+        "edge snow-pine: spring grass to pine",
+        "close: leaves only"
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: text Dev for a free estimate (sms: link, pre-filled body).",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);box-shadow:0 10px 22px -10px rgba(5,20,12,.55);}@media (hover:hover){.ds-btn-primary:hover{background:var(--orange-hot, #ff9d3a);border-color:var(--orange-hot, #ff9d3a);transform:translateY(-2px);box-shadow:0 16px 28px -12px rgba(5,20,12,.6);}}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The call partner: same height and outline as the primary, pine fill on dark grounds.",
+      "html": "<div style=\"background:#173a26;padding:16px\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z\"/></svg>Call (609) 467-9972</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-ghost{background:rgba(23,58,38,.88);color:var(--paper, #f2f1e6);}@media (hover:hover){.ds-btn-ghost:hover{background:#24472f;transform:translateY(-2px);}}"
+    },
+    {
+      "name": "Service Rows",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Each job is one whole-row sms: link ending in an arrow-in-circle that fills orange on hover.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Lawn mowing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Gutter cleaning</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Power washing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}"
+    },
+    {
+      "name": "Winter Service Rows",
+      "kind": "custom",
+      "refersTo": "service-row-winter",
+      "description": "The service row on the slate winter band: paper text, paper-tinted hairlines and circle.",
+      "html": "<ul class=\"ds-rows ds-rows-winter\"><li><a class=\"ds-row\" href=\"#\"><span>Snow removal</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Salting and ice treatment</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}.ds-rows-winter{background:var(--slate, #1f3447);}.ds-rows-winter .ds-row{color:var(--paper, #f2f1e6);border-color:rgba(242,241,230,.18);}.ds-rows-winter li:last-child .ds-row{border-bottom-color:rgba(242,241,230,.18);}.ds-rows-winter .ds-go{background:rgba(242,241,230,.12);color:var(--paper, #f2f1e6);}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "description": "Wordmark with orange Dev, and a tel: link with an orange phone icon; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\">Handy <b>Dev</b></a><a class=\"ds-top-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z\"/></svg><span>(609) 467-9972</span></a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 24px;background:var(--pine, #173a26);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-mark{font-weight:900;font-size:22px;letter-spacing:-0.01em;text-transform:uppercase;color:var(--paper, #f2f1e6);text-decoration:none;}.ds-mark b{color:var(--orange, #f28c28);}.ds-top-call{color:var(--paper, #f2f1e6);text-decoration:none;font-weight:700;font-size:16px;display:inline-flex;gap:8px;align-items:center;min-height:44px;}.ds-top-call svg{width:20px;height:20px;color:var(--orange, #f28c28);}.ds-top a:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}"
+    },
+    {
+      "name": "Sticky Text Bar",
+      "kind": "custom",
+      "refersTo": "sticky-text-bar",
+      "description": "Phone-only bar that slides up with the primary pill while the inline button pairs are off screen.",
+      "html": "<div class=\"ds-sticky\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);}.ds-sticky{padding:10px 16px;background:rgba(18,47,31,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -10px 30px -12px rgba(5,20,12,.6);}.ds-sticky .ds-btn{width:100%;}"
+    },
+    {
+      "name": "Message Preview Card",
+      "kind": "card",
+      "refersTo": "message-card",
+      "description": "Desktop hero card showing the exact text the primary button sends; tilted like a held phone.",
+      "html": "<div style=\"background:#173a26;padding:32px\"><div class=\"ds-msg\"><div class=\"ds-msg-to\"><span class=\"ds-msg-av\">HD</span><span><strong>Handy Dev</strong>(609) 467-9972</span></div><div class=\"ds-bubble\">Hi Dev! I found your website. I'd like a free estimate or to schedule a job.\nJob: \nTown: \nWhen: </div></div></div>",
+      "css": ".ds-msg{background:rgba(242,241,230,.96);color:var(--ink, #13301f);border-radius:26px;padding:22px 22px 18px;max-width:380px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);box-shadow:0 30px 60px -24px rgba(5,20,12,.7),0 8px 18px -8px rgba(5,20,12,.4);transform:rotate(1.5deg);}.ds-msg-to{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-soft, #3c5a44);padding-bottom:14px;}.ds-msg-to strong{display:block;color:var(--ink, #13301f);font-size:15px;}.ds-msg-av{width:34px;height:34px;border-radius:50%;background:var(--pine, #173a26);color:var(--orange, #f28c28);display:grid;place-items:center;font-weight:900;font-size:13px;}.ds-bubble{background:#2f7d4a;color:#fff;border-radius:20px 20px 6px 20px;padding:12px 15px;font-size:15px;line-height:1.45;margin-left:28px;white-space:pre-line;}"
+    },
+    {
+      "name": "Step",
+      "kind": "custom",
+      "description": "Numbered step on snow: moss numeral spanning an uppercase title and short copy.",
+      "html": "<div class=\"ds-steps\"><div class=\"ds-step\"><span class=\"ds-step-n\">1</span><h3>Text or call</h3><p>Tell Dev what needs doing and where. A photo of the job helps.</p></div></div>",
+      "css": ".ds-steps{background:var(--snow, #eef2f4);padding:24px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-step{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline;}.ds-step-n{grid-row:span 2;font-weight:900;font-size:84px;line-height:.8;color:#2f6b3a;}.ds-step h3{margin:0;font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;line-height:.95;color:var(--ink, #13301f);}.ds-step p{margin:0;color:var(--ink-soft, #3c5a44);max-width:34ch;font-size:17px;line-height:1.55;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Yard Through the Seasons",
+    "overview": "The page is Dev's workplace, not a contractor's brochure: the yards and driveways of Ocean County, walked top to bottom from an autumn dusk, across a mown lawn, into a winter drift, out onto fresh snow, and back to pine as the grass grows in again. Each section is a full-bleed seasonal ground, and the seams between grounds are alive: grass blades, snow drifts and falling leaves drawn on canvas, pushed by the pointer or a finger, always in the colors of the ground they lead into. There are no photos, no icon cards, no quote form. The world carries the identity; the type and the buttons stay plain and loud.\n\nDensity is low and thumb-sized. Heavy uppercase system-sans headlines (up to 96px) sit over a quiet 17px body, and every interactive thing is at least 58px tall because the visitor is on a phone with a job in mind. One color does the work of \"act here\": work-glove orange, which marks the text button, the call icon, the hover state of every job row, focus, selection, and the brand accent in the wordmark and the headline's second line.\n\nThe build is phone-first in its CSS: base rules describe the phone, and wider layouts are added with `min-width` queries only.",
+    "keyCharacteristics": [
+      "Full-bleed seasonal bands in fixed order: pine/dusk hero, sage services, slate winter, snow-white steps, pine close, pine-deep footer.",
+      "A living canvas edge between bands whose front layer is the next band's color, so sections grow into each other instead of meeting at a line.",
+      "Heavy uppercase system sans for headings; plain system sans for reading.",
+      "Work-glove orange is the single action color and the single brand accent.",
+      "Every service is a whole-row text link with a pre-filled SMS; there is no form.",
+      "A sticky text bar on phones whenever the inline buttons are out of view."
+    ],
+    "rules": [
+      {
+        "name": "The One Glove Rule",
+        "body": "Work-glove orange is reserved for actions (buttons, action icons, row hover, focus, selection) and the brand accent (wordmark \"Dev\", the headline's second line). It is never a section ground, a decorative fill, or body text. The autumn leaf colors in the canvas field are world material in their own hues, not the UI accent, and are never used in CSS.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Black Rule",
+        "body": "No ground is black or near-neutral dark. The darkest surface is pine deep; shadows are pine-tinted (`rgba(5,20,12,…)`), never pure black.",
+        "section": "colors"
+      },
+      {
+        "name": "The Band Text Rule",
+        "body": "Each ground has a fixed text pair: paper / paper soft on pine, paper / frost soft on slate, yard ink / yard ink soft on sage and snow. Do not mix pairs across grounds.",
+        "section": "colors"
+      },
+      {
+        "name": "The 96 Ceiling Rule",
+        "body": "No type exceeds 96px. Display sizes scale with viewport width and stop at 96.",
+        "section": "typography"
+      },
+      {
+        "name": "The Uppercase-Is-Heading Rule",
+        "body": "Uppercase belongs to h1-h3 and the wordmark only. Body, labels, buttons and rows stay sentence case; there are no small uppercase labels above headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The 16px Floor Rule",
+        "body": "Reading text on the page never goes below 16px. The pitch line is fitted to one line between 20px and 16px by script, then wraps rather than shrink further.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb Rule",
+        "body": "Every tap target is at least 44px; buttons and job rows are 58px. On phones the button pair stacks full-width.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lift-What-You-Tap Rule",
+        "body": "Shadows go on the primary action, the sticky bar and the message card. Lists, sections and text blocks are flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do write base CSS for the phone and add wider layouts with `min-width` queries only.",
+      "Do keep work-glove orange for actions and the brand accent; put glove ink on top of it.",
+      "Do keep every ground in the pine, dusk, sage, slate, snow family; darkest is pine deep.",
+      "Do join bands with a `Field` edge whose front layer is the next band's color.",
+      "Do make the whole service row the link, ending in the arrow-in-circle, with a pre-filled `sms:` body naming the job.",
+      "Do ship primary and ghost buttons as a same-height pair with the same 2px outline.",
+      "Do gate hover motion behind `(hover: hover)` and give every canvas a reduced-motion still frame.",
+      "Do cap display type at 96px and keep headings uppercase 900."
+    ],
+    "donts": [
+      "Don't use black or neutral-gray grounds, or pure-black shadows.",
+      "Don't use orange as a section ground, decoration, or text color outside the brand accent.",
+      "Don't put small uppercase kicker or eyebrow labels above headings.",
+      "Don't add thin decorative highlight lines (glossy top-edge strokes, accent rules under headings, gradient hairlines). The only 1px lines are the structural list and section dividers tinted from the band's own text color.",
+      "Don't introduce a web display font; the system stack is the brand voice.",
+      "Don't add a contact form, icon-card grids, or stock photography; the text link and the living field carry the page."
+    ]
+  }
+}
