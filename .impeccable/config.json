@@ -11,6 +11,18 @@
         ],
         "createdAt": "2026-10-17T18:36:56.933Z",
         "reason": "Claude triage 2026-10-17: flags full-bleed section bands (services, winter, how) and .final's border-top; content is inset by .wrap's 16-48px gutter and .final's 40-64px padding-top, verified in 360/390/1440 screenshots"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "#173a26",
+        "createdAt": "2026-10-17T20:49:24.972Z",
+        "reason": "Claude triage 2026-10-17: ground-colored text glow so leaves never cross text, required by pitch-site finishing-rules.md 'Readable over the scene' (a soft glow in the ground color); not a chromatic accent halo"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "#1f3447",
+        "createdAt": "2026-10-17T20:49:25.076Z",
+        "reason": "Claude triage 2026-10-17: same ground-colored glow on the winter band so snowflakes never cross text (finishing-rules.md)"
       }
     ]
   }
