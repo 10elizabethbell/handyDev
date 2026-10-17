@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T16:23:07+00:00",
+  "generatedAt": "2026-10-17T20:53:41+00:00",
   "title": "Design System: Handy Dev",
   "extensions": {
     "colorMeta": {
@@ -228,6 +228,111 @@
           "#bbccda",
           "#e0f1ff"
         ]
+      },
+      "hero-mid": {
+        "role": "neutral",
+        "displayName": "Hero Mid",
+        "canonical": "#1b3d36",
+        "tonalRamp": [
+          "#00100b",
+          "#082c25",
+          "#284942",
+          "#476961",
+          "#678b82",
+          "#89aea5",
+          "#add3c9",
+          "#d2f8ef"
+        ]
+      },
+      "frost-icon": {
+        "role": "neutral",
+        "displayName": "Frost Icon",
+        "canonical": "#9fc3e0",
+        "tonalRamp": [
+          "#000c1e",
+          "#06283e",
+          "#25455e",
+          "#44657f",
+          "#6587a2",
+          "#87aac6",
+          "#aaceec",
+          "#e0f1ff"
+        ]
+      },
+      "bubble-green": {
+        "role": "neutral",
+        "displayName": "Bubble Green",
+        "canonical": "#2f7d4a",
+        "tonalRamp": [
+          "#001102",
+          "#002f12",
+          "#005025",
+          "#237340",
+          "#499561",
+          "#6cb982",
+          "#91dea5",
+          "#c6ffd4"
+        ]
+      },
+      "bubble-text": {
+        "role": "neutral",
+        "displayName": "Bubble Text",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "focus": {
+        "role": "tertiary",
+        "displayName": "Sky Focus",
+        "canonical": "#7cc6ff",
+        "tonalRamp": [
+          "#000c1e",
+          "#002842",
+          "#03466d",
+          "#16679a",
+          "#3f89bf",
+          "#63ade4",
+          "#98d0fd",
+          "#e0f1ff"
+        ]
+      },
+      "focus-light": {
+        "role": "tertiary",
+        "displayName": "Deep Focus",
+        "canonical": "#1f63a8",
+        "tonalRamp": [
+          "#000a24",
+          "#00254d",
+          "#00427d",
+          "#1e63a7",
+          "#4385cd",
+          "#66a9f3",
+          "#a3cdfd",
+          "#e4f0fe"
+        ]
+      },
+      "facebook-glyph": {
+        "role": "neutral",
+        "displayName": "Facebook Glyph",
+        "canonical": "#8fb4ff",
+        "tonalRamp": [
+          "#00003a",
+          "#061d5c",
+          "#213e7e",
+          "#3e5ea2",
+          "#5e80c7",
+          "#80a4ee",
+          "#aec9ff",
+          "#e6efff"
+        ]
       }
     },
     "typographyMeta": {
@@ -237,7 +342,7 @@
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings and the Winter band heading."
+        "purpose": "Section headings and the Winter band heading; phrases held together with no-wrap spans."
       },
       "title": {
         "displayName": "Title",
@@ -257,7 +362,19 @@
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Button labels; rows use 700 at 18px."
+        "purpose": "Button and Facebook pill labels; rows use 700 at 18px, header number 800 at 16px."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Row notes, quote attribution, footer; the 16px floor."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Handy Dev mark in the header, uppercase 900."
+      },
+      "mock-ui": {
+        "displayName": "Mock UI",
+        "purpose": "Message preview only (imitates a phone screen); exempt from the 16px floor."
       }
     },
     "shadows": [
@@ -277,16 +394,21 @@
         "purpose": "Message preview card, tilted 1.5deg."
       },
       {
-        "name": "bar-underglow",
-        "value": "0 -10px 30px -12px rgba(5,20,12,.6)",
-        "purpose": "Sticky text bar, with 10px backdrop blur."
+        "name": "ground-halo-pine",
+        "value": "0 0 18px rgba(23,58,38,.95), 0 0 6px rgba(23,58,38,.9)",
+        "purpose": "Text halo in the pine ground color on hero copy and header (close uses 16px/6px), so particles fade behind letters."
+      },
+      {
+        "name": "ground-halo-slate",
+        "value": "0 0 14px rgba(31,52,71,.95), 0 0 5px rgba(31,52,71,.9)",
+        "purpose": "Same halo in the slate ground color on the winter band."
       }
     ],
     "motion": [
       {
         "name": "ease-out",
         "value": "cubic-bezier(.16, 1, .3, 1)",
-        "purpose": "All movement: button rise, row slide, sticky bar."
+        "purpose": "All movement: button rise, row slide."
       },
       {
         "name": "color-change",
@@ -304,9 +426,9 @@
         "purpose": "Row name and arrow circle slide."
       },
       {
-        "name": "bar-slide",
-        "value": ".45s",
-        "purpose": "Sticky bar enter and exit."
+        "name": "mower",
+        "value": "auto 120px/s; follow eased x7, capped 700px/s; resume after 4s idle; cut to 0.24 height; regrow 0.09/s",
+        "purpose": "Hero push mower (T.MOW_* and T.REGROW)."
       },
       {
         "name": "reduced-motion",
@@ -316,16 +438,12 @@
     ],
     "breakpoints": [
       {
-        "name": "pair",
+        "name": "hero-band",
         "value": "561px"
       },
       {
         "name": "canvas-phone (max)",
         "value": "640px"
-      },
-      {
-        "name": "sticky-off",
-        "value": "720px"
       },
       {
         "name": "columns",
@@ -352,13 +470,24 @@
         "DAMP": 6.5,
         "LEAF_RADIUS": 95,
         "DRIFT_SPRING": 14,
-        "DRIFT_DAMP": 4.5
+        "DRIFT_DAMP": 4.5,
+        "MOW_SCALE": 1.6,
+        "MOW_SCALE_PHONE": 1.2,
+        "MOW_AUTO_SPEED": 120,
+        "MOW_MAX_SPEED": 700,
+        "MOW_FOLLOW": 7,
+        "MOW_RESUME": 4,
+        "MOW_CUT_TO": 0.24,
+        "REGROW": 0.09,
+        "CLIPPINGS_MAX": 70,
+        "CLIPPINGS_MAX_PHONE": 36
       },
       "options": {
         "grass": "[{h:[min,max], w, c:[colors]}] back to front; last layer = next band's color",
         "drift": "{h:[back,front], amp, c:[back, front]}; front = next band's color",
         "parts": "{kind:'leaf'|'flake', desk, phone, floor?:[min,max]}",
-        "base": "3px seam strip in the next band's color"
+        "base": "3px seam strip in the next band's color",
+        "mower": "true adds Dev's push mower to a grass field (hero only): mows alone until touched, then follows pointer/finger; grass regrows, clippings fly"
       },
       "leafColors": [
         "#e2711d",
@@ -385,16 +514,25 @@
         ]
       },
       "driftBack": [
-        "#9fb3c4",
-        "#9fb6c9"
+        "#e3ebf1 (sage-slate edge, snowbank crest)",
+        "#9fb6c9 (winter)"
       ],
       "instances": [
-        "hero: 4 grass layers to sage + resting leaves",
-        "edge sage-slate: drift to slate",
+        "hero: 4 grass layers to sage + resting leaves + mower",
+        "edge sage-slate: snowbank-crest drift to slate",
         "winter: snowfall + drift to snow white",
         "edge snow-pine: spring grass to pine",
         "close: leaves only"
-      ]
+      ],
+      "mowerColors": {
+        "deck": "#f28c28",
+        "skirt": "#c4680f",
+        "handle-wheels": "#1d1a12",
+        "engine": "#2b2a24",
+        "engine-cap": "#4a4840",
+        "hubs": "#8c8a80"
+      },
+      "mowZone": ".mow-zone over the hero lawn band (96px, 120px from 561px), touch-action:none; html overscroll-behavior-y:none"
     }
   },
   "components": [
@@ -402,17 +540,9 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one action: text Dev for a free estimate (sms: link, pre-filled body).",
-      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);box-shadow:0 10px 22px -10px rgba(5,20,12,.55);}@media (hover:hover){.ds-btn-primary:hover{background:var(--orange-hot, #ff9d3a);border-color:var(--orange-hot, #ff9d3a);transform:translateY(-2px);box-shadow:0 16px 28px -12px rgba(5,20,12,.6);}}"
-    },
-    {
-      "name": "Ghost Button",
-      "kind": "button",
-      "refersTo": "button-ghost",
-      "description": "The call partner: same height and outline as the primary, pine fill on dark grounds.",
-      "html": "<div style=\"background:#173a26;padding:16px\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z\"/></svg>Call (609) 467-9972</a></div>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-ghost{background:rgba(23,58,38,.88);color:var(--paper, #f2f1e6);}@media (hover:hover){.ds-btn-ghost:hover{background:#24472f;transform:translateY(-2px);}}"
+      "description": "The one action, used alone in the hero and the close: text Dev for a free estimate (sms: link, pre-filled body).",
+      "html": "<div style=\"background:#173a26;padding:16px\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:999px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);box-shadow:0 10px 22px -10px rgba(5,20,12,.55);}@media (hover:hover){.ds-btn-primary:hover{background:var(--orange-hot, #ff9d3a);border-color:var(--orange-hot, #ff9d3a);transform:translateY(-2px);box-shadow:0 16px 28px -12px rgba(5,20,12,.6);}}"
     },
     {
       "name": "Service Rows",
@@ -420,7 +550,7 @@
       "refersTo": "service-row",
       "description": "Each job is one whole-row sms: link ending in an arrow-in-circle that fills orange on hover.",
       "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Lawn mowing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Gutter cleaning</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Power washing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
-      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}"
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--focus-light, #1f63a8);outline-offset:3px;border-radius:6px;}"
     },
     {
       "name": "Winter Service Rows",
@@ -428,59 +558,65 @@
       "refersTo": "service-row-winter",
       "description": "The service row on the slate winter band: paper text, paper-tinted hairlines and circle.",
       "html": "<ul class=\"ds-rows ds-rows-winter\"><li><a class=\"ds-row\" href=\"#\"><span>Snow removal</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Salting and ice treatment</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
-      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}.ds-rows-winter{background:var(--slate, #1f3447);}.ds-rows-winter .ds-row{color:var(--paper, #f2f1e6);border-color:rgba(242,241,230,.18);}.ds-rows-winter li:last-child .ds-row{border-bottom-color:rgba(242,241,230,.18);}.ds-rows-winter .ds-go{background:rgba(242,241,230,.12);color:var(--paper, #f2f1e6);}"
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:6px;}.ds-rows-winter{background:var(--slate, #1f3447);}.ds-rows-winter .ds-row{color:var(--paper, #f2f1e6);border-color:rgba(242,241,230,.18);}.ds-rows-winter li:last-child .ds-row{border-bottom-color:rgba(242,241,230,.18);}.ds-rows-winter .ds-go{background:rgba(242,241,230,.12);color:var(--paper, #f2f1e6);}"
     },
     {
       "name": "Top Bar",
       "kind": "nav",
-      "description": "Wordmark with orange Dev, and a tel: link with an orange phone icon; no menu.",
+      "description": "Wordmark with orange Dev left; tap-to-call number with an orange phone icon right, on every width. No menu.",
       "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\">Handy <b>Dev</b></a><a class=\"ds-top-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z\"/></svg><span>(609) 467-9972</span></a></header>",
-      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 24px;background:var(--pine, #173a26);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-mark{font-weight:900;font-size:22px;letter-spacing:-0.01em;text-transform:uppercase;color:var(--paper, #f2f1e6);text-decoration:none;}.ds-mark b{color:var(--orange, #f28c28);}.ds-top-call{color:var(--paper, #f2f1e6);text-decoration:none;font-weight:700;font-size:16px;display:inline-flex;gap:8px;align-items:center;min-height:44px;}.ds-top-call svg{width:20px;height:20px;color:var(--orange, #f28c28);}.ds-top a:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;border-radius:6px;}"
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 24px;background:var(--pine, #173a26);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-mark{font-weight:900;font-size:clamp(19px,5.4vw,22px);line-height:44px;letter-spacing:-0.01em;text-transform:uppercase;color:var(--paper, #f2f1e6);text-decoration:none;}.ds-mark b{color:var(--orange, #f28c28);}.ds-top-call{color:var(--paper, #f2f1e6);text-decoration:none;font-weight:800;font-size:16px;white-space:nowrap;display:inline-flex;gap:8px;align-items:center;min-height:44px;}.ds-top-call svg{width:20px;height:20px;color:var(--orange, #f28c28);}.ds-top a:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:6px;}@media (hover:hover){.ds-top-call:hover span{text-decoration:underline;text-underline-offset:4px;}}",
+      "refersTo": "top-call"
     },
     {
-      "name": "Sticky Text Bar",
-      "kind": "custom",
-      "refersTo": "sticky-text-bar",
-      "description": "Phone-only bar that slides up with the primary pill while the inline button pairs are off screen.",
-      "html": "<div class=\"ds-sticky\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a></div>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--orange, #f28c28);outline-offset:3px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);}.ds-sticky{padding:10px 16px;background:rgba(18,47,31,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -10px 30px -12px rgba(5,20,12,.6);}.ds-sticky .ds-btn{width:100%;}"
+      "name": "Facebook Pill",
+      "kind": "chip",
+      "refersTo": "facebook-pill",
+      "description": "Secondary link under Dev's quote: translucent paper pill with the Facebook glyph; never orange.",
+      "html": "<div style=\"background:#173a26;padding:24px\"><a class=\"ds-fb\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3Z\"/></svg><span>See more of my work on Facebook</span></a></div>",
+      "css": ".ds-fb{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px 0 14px;border-radius:999px;background:rgba(242,241,230,.1);color:var(--paper, #f2f1e6);font:800 17px/1.55 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;transition:background-color .2s;}.ds-fb svg{width:22px;height:22px;color:#8fb4ff;}@media (hover:hover){.ds-fb:hover{background:rgba(242,241,230,.18);}.ds-fb:hover span{text-decoration:underline;}}.ds-fb:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;}"
     },
     {
       "name": "Message Preview Card",
       "kind": "card",
       "refersTo": "message-card",
       "description": "Desktop hero card showing the exact text the primary button sends; tilted like a held phone.",
-      "html": "<div style=\"background:#173a26;padding:32px\"><div class=\"ds-msg\"><div class=\"ds-msg-to\"><span class=\"ds-msg-av\">HD</span><span><strong>Handy Dev</strong>(609) 467-9972</span></div><div class=\"ds-bubble\">Hi Dev! I found your website. I'd like a free estimate or to schedule a job.\nJob: \nTown: \nWhen: </div></div></div>",
-      "css": ".ds-msg{background:rgba(242,241,230,.96);color:var(--ink, #13301f);border-radius:26px;padding:22px 22px 18px;max-width:380px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);box-shadow:0 30px 60px -24px rgba(5,20,12,.7),0 8px 18px -8px rgba(5,20,12,.4);transform:rotate(1.5deg);}.ds-msg-to{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-soft, #3c5a44);padding-bottom:14px;}.ds-msg-to strong{display:block;color:var(--ink, #13301f);font-size:15px;}.ds-msg-av{width:34px;height:34px;border-radius:50%;background:var(--pine, #173a26);color:var(--orange, #f28c28);display:grid;place-items:center;font-weight:900;font-size:13px;}.ds-bubble{background:#2f7d4a;color:#fff;border-radius:20px 20px 6px 20px;padding:12px 15px;font-size:15px;line-height:1.45;margin-left:28px;white-space:pre-line;}"
+      "html": "<div style=\"background:#173a26;padding:32px\"><div class=\"ds-msg\"><div class=\"ds-msg-to\"><span class=\"ds-msg-av\">HD</span><span><strong>Handy Dev</strong>Text message</span></div><div class=\"ds-bubble\">Hi Dev! I found your website. I'd like a free estimate or to schedule a job.\nJob: \nTown: \nWhen: </div><p class=\"ds-msg-cap\">Tap “Text for a free estimate” and this is ready to send.</p></div></div>",
+      "css": ".ds-msg{background:rgba(242,241,230,.96);color:var(--ink, #13301f);border-radius:26px;padding:22px 22px 18px;max-width:380px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);box-shadow:0 30px 60px -24px rgba(5,20,12,.7),0 8px 18px -8px rgba(5,20,12,.4);transform:rotate(1.5deg);}.ds-msg-to{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-soft, #3c5a44);padding-bottom:14px;}.ds-msg-to strong{display:block;color:var(--ink, #13301f);font-size:15px;}.ds-msg-av{width:34px;height:34px;border-radius:50%;background:var(--pine, #173a26);color:var(--orange, #f28c28);display:grid;place-items:center;font-weight:900;font-size:13px;}.ds-bubble{background:#2f7d4a;color:#fff;border-radius:20px 20px 6px 20px;padding:12px 15px;font-size:15px;line-height:1.45;margin-left:28px;white-space:pre-line;}.ds-msg-cap{margin:12px 0 0;font-size:13px;color:var(--ink-soft, #3c5a44);text-align:right;}"
     },
     {
       "name": "Step",
       "kind": "custom",
       "description": "Numbered step on snow: moss numeral spanning an uppercase title and short copy.",
-      "html": "<div class=\"ds-steps\"><div class=\"ds-step\"><span class=\"ds-step-n\">1</span><h3>Text or call</h3><p>Tell Dev what needs doing and where. A photo of the job helps.</p></div></div>",
+      "html": "<div class=\"ds-steps\"><div class=\"ds-step\"><span class=\"ds-step-n\">1</span><h3>Text or call</h3><p>Send me a photo and your town. You’ll be dealing with me, Dev, from the first text to the last.</p></div></div>",
       "css": ".ds-steps{background:var(--snow, #eef2f4);padding:24px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-step{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline;}.ds-step-n{grid-row:span 2;font-weight:900;font-size:84px;line-height:.8;color:#2f6b3a;}.ds-step h3{margin:0;font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;line-height:.95;color:var(--ink, #13301f);}.ds-step p{margin:0;color:var(--ink-soft, #3c5a44);max-width:34ch;font-size:17px;line-height:1.55;}"
     }
   ],
   "narrative": {
     "northStar": "The Yard Through the Seasons",
-    "overview": "The page is Dev's workplace, not a contractor's brochure: the yards and driveways of Ocean County, walked top to bottom from an autumn dusk, across a mown lawn, into a winter drift, out onto fresh snow, and back to pine as the grass grows in again. Each section is a full-bleed seasonal ground, and the seams between grounds are alive: grass blades, snow drifts and falling leaves drawn on canvas, pushed by the pointer or a finger, always in the colors of the ground they lead into. There are no photos, no icon cards, no quote form. The world carries the identity; the type and the buttons stay plain and loud.\n\nDensity is low and thumb-sized. Heavy uppercase system-sans headlines (up to 96px) sit over a quiet 17px body, and every interactive thing is at least 58px tall because the visitor is on a phone with a job in mind. One color does the work of \"act here\": work-glove orange, which marks the text button, the call icon, the hover state of every job row, focus, selection, and the brand accent in the wordmark and the headline's second line.\n\nThe build is phone-first in its CSS: base rules describe the phone, and wider layouts are added with `min-width` queries only.",
+    "overview": "The page is Dev's workplace, not a contractor's brochure: the yards and driveways of Ocean County, walked top to bottom from an autumn dusk, across a lawn Dev's mower is cutting, into a winter drift, out onto fresh snow, and back to pine as the grass grows in again. Each section is a full-bleed seasonal ground, and the seams between grounds are alive: grass blades, snow drifts and falling leaves drawn on canvas, pushed by the pointer or a finger, always in the colors of the ground they lead into. In the hero the visitor can take over a push mower and cut the lawn themselves. There are no photos, no icon cards, no quote form. The world carries the identity; the type and the button stay plain and loud. The copy speaks in Dev's own first person (\"Text me\", \"I'll tell you a fair price\").\n\nDensity is low and thumb-sized. Heavy uppercase headlines (up to 96px) sit over a quiet 17px body, and every primary interactive thing is 58px tall because the visitor is on a phone with a job in mind. One color does the work of \"act here\": work-glove orange, which fills the single text button, colors the header phone icon, fills the hover state of every job row, and marks the brand accent in the wordmark and the headline's second line. Focus is deliberately not orange: it is a clear blue ring so a focused button never reads as its own fill.\n\nThe build is phone-first in its CSS: base rules describe the phone, and wider layouts are added with `min-width` queries only.",
     "keyCharacteristics": [
       "Full-bleed seasonal bands in fixed order: pine/dusk hero, sage services, slate winter, snow-white steps, pine close, pine-deep footer.",
       "A living canvas edge between bands whose front layer is the next band's color, so sections grow into each other instead of meeting at a line.",
-      "Heavy uppercase system sans for headings; plain system sans for reading.",
-      "Work-glove orange is the single action color and the single brand accent.",
-      "Every service is a whole-row text link with a pre-filled SMS; there is no form.",
-      "A sticky text bar on phones whenever the inline buttons are out of view."
+      "A push mower in the hero lawn that mows on its own until touched, then follows the finger or mouse; cut grass regrows.",
+      "Heavy uppercase sans for headings; plain sans for reading; copy in Dev's first-person voice.",
+      "Work-glove orange is the single action color and the single brand accent; focus is blue.",
+      "One action per spot: a single orange \"Text for a free estimate\" pill in the hero and the close; every service is a whole-row text link with a pre-filled SMS. The phone number lives only in the header and the footer."
     ],
     "rules": [
       {
         "name": "The One Glove Rule",
-        "body": "Work-glove orange is reserved for actions (buttons, action icons, row hover, focus, selection) and the brand accent (wordmark \"Dev\", the headline's second line). It is never a section ground, a decorative fill, or body text. The autumn leaf colors in the canvas field are world material in their own hues, not the UI accent, and are never used in CSS.",
+        "body": "Work-glove orange is reserved for actions (the text button, the header phone icon, row hover, selection) and the brand accent (wordmark \"Dev\", the headline's second line, the favicon \"D\"). It is never a section ground, a decorative fill, body text, or the focus ring. In the canvas world the one orange object is Dev's own push mower deck: his equipment wears the glove color because it is the thing the visitor's hand takes over. The autumn leaf colors are world material in their own hues, not the UI accent, and are never used in CSS.",
+        "section": "colors"
+      },
+      {
+        "name": "The Blue Focus Rule",
+        "body": "Keyboard focus is a 3px blue outline with a 3px offset and 6px corner, sky blue on dark grounds and deep blue on sage and snow. Never orange, so focus never merges with the button fill.",
         "section": "colors"
       },
       {
         "name": "The No-Black Rule",
-        "body": "No ground is black or near-neutral dark. The darkest surface is pine deep; shadows are pine-tinted (`rgba(5,20,12,…)`), never pure black.",
+        "body": "No ground is black or near-neutral dark. The darkest surface is pine deep; shadows and text halos are pine- or slate-tinted, never pure black.",
         "section": "colors"
       },
       {
@@ -489,47 +625,65 @@
         "section": "colors"
       },
       {
+        "name": "The System-Stack Rule",
+        "body": "The platform sans stack is the brand voice, by Ellie's house style for these sites (pitch-site ellie-taste.md, Type: \"the system font stack, heavy uppercase display headings ... It's fast and it worked\"). It is a deliberate owner choice that overrides Impeccable's craft-floor preference for a sourced display face: no web fonts, no font downloads, nothing to slow the first screen on cellular.",
+        "section": "typography"
+      },
+      {
         "name": "The 96 Ceiling Rule",
         "body": "No type exceeds 96px. Display sizes scale with viewport width and stop at 96.",
         "section": "typography"
       },
       {
         "name": "The Uppercase-Is-Heading Rule",
-        "body": "Uppercase belongs to h1-h3 and the wordmark only. Body, labels, buttons and rows stay sentence case; there are no small uppercase labels above headings.",
+        "body": "Uppercase belongs to h1-h3 and the wordmark only. Body, labels, buttons and rows stay sentence case.",
         "section": "typography"
       },
       {
         "name": "The 16px Floor Rule",
-        "body": "Reading text on the page never goes below 16px. The pitch line is fitted to one line between 20px and 16px by script, then wraps rather than shrink further.",
+        "body": "Reading text on the page never goes below 16px. The pitch line is fitted to one line between 20px and 16px by script, then wraps rather than shrink further (its 14px CSS floor is only a pre-script fallback). The `mock-ui` sizes (15px, 13px) live only inside the desktop message preview, which imitates a phone screen.",
         "section": "typography"
       },
       {
         "name": "The Thumb Rule",
-        "body": "Every tap target is at least 44px; buttons and job rows are 58px. On phones the button pair stacks full-width.",
+        "body": "Every tap target is at least 44px; the text button and job rows are 58px, the Facebook pill 48px. On phones the text button runs full-width.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lawn-Is-A-Surface Rule",
+        "body": "Over the hero's lawn band a transparent mow zone (96px phone, 120px wider) takes `touch-action: none`, so a drag in any direction mows instead of scrolling; the page sets `overscroll-behavior-y: none` so mowing never rubber-bands the page. Keep the zone to the lawn band only, never over copy or the button.",
         "section": "layout"
       },
       {
         "name": "The Lift-What-You-Tap Rule",
-        "body": "Shadows go on the primary action, the sticky bar and the message card. Lists, sections and text blocks are flat.",
+        "body": "Box shadows go on the primary action and the message card. Lists, sections and text blocks are flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Halo-Is-Ground Rule",
+        "body": "Text over a living canvas carries a halo in exactly its band's ground color, never a tint, a contrasting glow, or black. It exists for legibility over particles, not as decoration.",
         "section": "elevation"
       }
     ],
     "dos": [
       "Do write base CSS for the phone and add wider layouts with `min-width` queries only.",
       "Do keep work-glove orange for actions and the brand accent; put glove ink on top of it.",
+      "Do use the blue focus ring: `focus` on dark grounds, `focus-light` on sage and snow.",
       "Do keep every ground in the pine, dusk, sage, slate, snow family; darkest is pine deep.",
       "Do join bands with a `Field` edge whose front layer is the next band's color.",
       "Do make the whole service row the link, ending in the arrow-in-circle, with a pre-filled `sms:` body naming the job.",
-      "Do ship primary and ghost buttons as a same-height pair with the same 2px outline.",
+      "Do give each action spot one orange text pill and keep the phone number to the header and footer.",
+      "Do halo text over a living canvas in its own ground color.",
+      "Do write copy in Dev's first person.",
       "Do gate hover motion behind `(hover: hover)` and give every canvas a reduced-motion still frame.",
       "Do cap display type at 96px and keep headings uppercase 900."
     ],
     "donts": [
       "Don't use black or neutral-gray grounds, or pure-black shadows.",
-      "Don't use orange as a section ground, decoration, or text color outside the brand accent.",
+      "Don't use orange as a section ground, decoration, focus ring, or text color outside the brand accent; the mower deck is the only orange in the canvas.",
+      "Don't put a second pill or a Call button beside the text button.",
       "Don't put small uppercase kicker or eyebrow labels above headings.",
       "Don't add thin decorative highlight lines (glossy top-edge strokes, accent rules under headings, gradient hairlines). The only 1px lines are the structural list and section dividers tinted from the band's own text color.",
-      "Don't introduce a web display font; the system stack is the brand voice.",
       "Don't add a contact form, icon-card grids, or stock photography; the text link and the living field carry the page."
     ]
   }

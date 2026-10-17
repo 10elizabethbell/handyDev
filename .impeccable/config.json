@@ -23,6 +23,30 @@
         "value": "#1f3447",
         "createdAt": "2026-10-17T20:49:25.076Z",
         "reason": "Claude triage 2026-10-17: same ground-colored glow on the winter band so snowflakes never cross text (finishing-rules.md)"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(23,58,38,.95)",
+        "createdAt": "2026-10-17T20:50:52.520Z",
+        "reason": "Claude triage 2026-10-17: same ground-colored text glow as the hex ignores (pine/slate), required by finishing-rules.md 'Readable over the scene'"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(23,58,38,.9)",
+        "createdAt": "2026-10-17T20:50:52.625Z",
+        "reason": "Claude triage 2026-10-17: same ground-colored text glow as the hex ignores (pine/slate), required by finishing-rules.md 'Readable over the scene'"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(31,52,71,.95)",
+        "createdAt": "2026-10-17T20:50:52.729Z",
+        "reason": "Claude triage 2026-10-17: same ground-colored text glow as the hex ignores (pine/slate), required by finishing-rules.md 'Readable over the scene'"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(31,52,71,.9)",
+        "createdAt": "2026-10-17T20:50:52.840Z",
+        "reason": "Claude triage 2026-10-17: same ground-colored text glow as the hex ignores (pine/slate), required by finishing-rules.md 'Readable over the scene'"
       }
     ]
   }
