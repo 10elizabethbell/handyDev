@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T18:36:56.933Z",
+        "reason": "Claude triage 2026-10-17: flags full-bleed section bands (services, winter, how) and .final's border-top; content is inset by .wrap's 16-48px gutter and .final's 40-64px padding-top, verified in 360/390/1440 screenshots"
+      }
+    ]
+  }
+}
