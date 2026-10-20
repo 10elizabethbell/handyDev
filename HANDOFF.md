@@ -8,8 +8,8 @@ The site was rebuilt end to end under the new house default, the calm band style
 - **Look:** paper, pine and deep-pine bands alternate down the page, with the faint diagonal line texture on the dark ones. Work-glove orange is the one accent and is used as a fill; text on it is deep pine. Headings are Cal Sans, body is the system stack at 16/1.7, buttons are pills, and the form is a 24px card.
 - **Hero:** a plain textured pine band (no photos exist). Its contents are an eyebrow pill ("Handyman & property maintenance"), the H1 "Small jobs, big impact in Ocean County." (his tagline with the place in it) bouncing in letter by letter, "I'm Dev. If it needs fixing, cleaning, or maintaining, I can help.", and two buttons: **Get a free estimate** (orange, jumps to the form) and **Text Dev** (outlined, opens a pre-filled text).
 - **New structure:** hero, then "I leave it better than I found it." with his flyer's three promises and the Facebook row, then all 17 services as rows on deep pine in three groups, then the estimate form with "How it works" as three steps beside it, then a pine close with his own intro line and the big number, then the footer.
-- **New: estimate form.** It asks for name, the job, town (optional) and when (optional). It turns them into a text to Dev and shows "Didn't open your messages? Call or text me at…" in case nothing opens. Inline errors are written as plain sentences.
-- **New: floating text circle** at the bottom right. It appears after the hero and hides while the form is on screen.
+- **New: estimate form.** It asks for name, the job, town (optional) and when (optional), and turns them into a text to Dev. If nothing opens (desktop, some in-app browsers), it offers "Tap the button again", a **Copy message** button and the number. If copying is blocked, as Facebook's in-app browser can do, the message appears selected in a box instead. Inline errors are written as plain sentences.
+- **New: floating text circle** at the bottom right. It appears after the hero, then hides over the service rows (each row already texts about its job, and the circle covered their arrows) and while the form is on screen.
 - **Motion:** the H1 bounce-in, a 12px fade-up for things below the first screen, and the circle's slide. Everything shows at once with reduced motion on or JS off.
 - **Unchanged facts and wiring:** the same phone number, the same per-service pre-filled texts (each row names its job), the same Facebook profile link, and no email.
 - **Icons:** the favicon, home-screen icon and og image were redrawn in the new palette. The og image is the hero line on pine with the number.
@@ -44,6 +44,22 @@ The site was rebuilt end to end under the new house default, the calm band style
 - Which jobs do you most want more of? They go first in each list.
 - A logo or color you use (truck, shirt, flyer)? It would replace the pine/orange and the "HD" icon.
 - Is there an email you want in the footer?
+
+## Impeccable pass (2026-10-19)
+- I applied every mode except `live`. `onboard` doesn't apply, and `overdrive` is opt-in under the calm default.
+- **Finish reviewer:** I applied its fixes:
+  - the circle hides over the rows
+  - the form's copy fallback
+  - helper and error text back to 16px
+  - the trust lede no longer repeats its heading
+  - shorter services lede ("Tap a job to text me about it.")
+  - orange "Dev" in the close heading
+  - the contract's FORM line
+  - DESIGN.md rewritten
+- **Changed from the reviewer's suggestion:** its "Open in Messages" fallback button would have sat beside "Text this to Dev", two controls doing the same thing, so the fallback is copy-only.
+- **Not applied:** removing the number from the footer. The reviewer read the close and footer as one screen, but finishing-rules.md explicitly allows the number in both. Your call.
+- **Detector:** I kept the band texture (Ellie's choice) and the pine-tinted soft text #cfe0d4 on pine (7.3:1, flagged as "gray"); both are recorded as ignores in `.impeccable/config.json`. A "flat type hierarchy" warning is still standing: the 16/18/20px body steps serve body, labels and rows, and the promise.
+- **Harden/adapt:** I checked 320, 360, 390, 430, 800, 844 landscape, 1024 and 1440 with no sideways overflow. The hero eyebrow tightens below 340px so it stays on one line.
 
 ## Ideas not built (yours to pick)
 - **Signature motion, opt-in:** the old mower hero (commit `9a51e2d`) could come back as the hero's living element. Runner-up world: a pegboard workshop whose tools swing when you sweep past.
