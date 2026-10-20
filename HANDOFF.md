@@ -62,6 +62,7 @@ The site was rebuilt end to end under the new house default, the calm band style
 - **Not applied:** removing the number from the footer. The reviewer read the close and footer as one screen, but finishing-rules.md explicitly allows the number in both. Your call.
 - **Detector:** I kept the band texture (Ellie's choice) and the pine-tinted soft text #cfe0d4 on pine (7.3:1, flagged as "gray"); both are recorded as ignores in `.impeccable/config.json`. A "flat type hierarchy" warning is still standing: the 16/18/20px body steps serve body, labels and rows, and the promise.
 - **Form fixes from the vault's revamp lessons (after the done mark):** field fill #e7ece4 instead of paper (was 1.08:1 on the white card), the error border now survives submit focusing the field, and a selected chip shows a keyboard focus outline. These bugs come from DPG's form code.
+- **Desktop service rows (vault lesson):** on a mouse-and-keyboard computer, where `sms:` usually does nothing, rows jump to the form with the job written in and the name field focused. Phones still open the pre-filled text. The services lede still says "Tap a job to text me about it." on desktop too.
 - **Harden/adapt:** I checked 320, 360, 390, 430, 800, 844 landscape, 1024 and 1440 with no sideways overflow. The hero eyebrow tightens below 340px so it stays on one line.
 
 ## Ideas not built (yours to pick)

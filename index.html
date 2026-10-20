@@ -419,6 +419,18 @@ document.documentElement.classList.add('js');
   [].forEach.call(document.querySelectorAll('a.sms'),function(a){
     a.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(body(a.getAttribute('data-job')));
   });
+  // a mouse-and-keyboard computer usually can't open sms: links, so there the service rows
+  // jump to the estimate form with the job written in instead
+  if(!matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+  [].forEach.call(document.querySelectorAll('a.row'),function(a){
+    var job=a.getAttribute('data-job');
+    a.href='#ask';
+    a.addEventListener('click',function(){
+      var what=document.getElementById('what');
+      what.value=job.charAt(0).toUpperCase()+job.slice(1);
+      setTimeout(function(){document.getElementById('name').focus({preventScroll:true})},400);
+    });
+  });
 })();
 
 /* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
