@@ -35,6 +35,7 @@
   --accent:#f28c28;      /* work-glove orange: fills only; text on it is --ink */
   --accent-2:#ff9d3a;
   --accent-ink:#9a4a00;  /* orange as text on light (5.8:1) */
+  --field:#e7ece4;       /* input and chip fill: visible on the white form card (paper was 1.08:1) */
   --line:rgba(19,48,31,.12);
   --line-dark:rgba(255,255,255,.14);
   --focus:#1f4a33;       /* form hover/focus outline, distinct from the orange fill */
@@ -146,18 +147,18 @@ form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,3
 .field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
 .field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s}
 textarea{min-height:120px;resize:vertical}
 input::placeholder,textarea::placeholder{color:var(--soft)}
 input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
-.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
-.chips input:focus-visible+label{border-color:var(--focus);outline:none}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{border-color:var(--focus);outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
 .err{display:none;font-size:16px;color:var(--error)}
 .field.bad .err{display:block}
-.field.bad input,.field.bad textarea{border-color:var(--error)}
+.field.bad input[type=text],.field.bad textarea{border-color:var(--error)}  /* after :focus, so the error survives submit focusing the field */
 form .btn{width:100%}
 form .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .after{font-size:16px;color:var(--soft)}

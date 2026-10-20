@@ -2,6 +2,7 @@
 name: Handy Dev
 description: One local handyman in calm full-bleed bands of paper and pine; every surface ends in a text to Dev.
 colors:
+  field-fill: "#e7ece4"
   work-glove-orange: "#f28c28"
   work-glove-orange-hot: "#ff9d3a"
   orange-ink: "#9a4a00"
@@ -148,14 +149,14 @@ components:
     rounded: "{rounded.card}"
     padding: "clamp(20px, 5vw, 32px)"
   input:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.field-fill}"
     textColor: "{colors.pine-ink}"
     typography: "{typography.body}"
     rounded: "{rounded.field}"
     padding: "13px 14px"
     height: "52px"
   chip:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.field-fill}"
     textColor: "{colors.pine-ink}"
     rounded: "{rounded.pill}"
     padding: "0 18px"
@@ -341,7 +342,7 @@ Soft and borderless. Cards are 24px, fields 10px on a tinted fill with no visibl
 ### Estimate Form
 - White card, 24px radius, clamp 20–32px padding, 20px gaps, Card lift, max 600px.
 - **Labels:** Label type in Pine Ink; "(optional)" in 14px Soft Pine.
-- **Inputs:** Paper fill, 10px radius, 2px transparent border, 52px min (textarea 120px, vertical resize), 16px system text, Orange Ink caret, Soft Pine placeholder. Hover and focus color the border Focus Pine.
+- **Inputs:** Field Fill (#e7ece4, pine-tinted; paper was 1.08:1 on the white card), 10px radius, 2px transparent border, 52px min (textarea 120px, vertical resize), 16px system text, Orange Ink caret, Soft Pine placeholder. Hover and focus color the border Focus Pine.
 - **Chips:** single-choice radios styled as 48px pills on Paper with a 2px transparent border; hover or keyboard focus colors the border Focus Pine; selected fills Pine Ink with white text. Padding tightens from 18px to 14px under 380px.
 - **Errors:** inline Error Red text under the field and an Error Red border; focus jumps to the first bad field; the error clears as soon as the field has text.
 - **Submit and fallback:** the full-width primary composes a text and opens messages. If nothing opens after 900ms, a status block (Pine Ink, 600) offers the number and a Line "Copy message" button; if the clipboard is blocked, the message appears selected in a readonly textarea.
@@ -368,7 +369,7 @@ Soft and borderless. Cards are 24px, fields 10px on a tinted fill with no visibl
 - **Do** alternate full-bleed bands light and dark: paper, pine, deep pine with the 135° texture at 3.5% white.
 - **Do** use Work-Glove Orange as a fill with Pine Ink text on it, and Orange Ink when orange must be text on light.
 - **Do** set headings, buttons, labels and phone numbers in Cal Sans 400, and everything else in the system stack at 16px/1.7.
-- **Do** keep cards at 24px, fields at 10px on a Paper fill with no visible border at rest, and buttons, chips and eyebrows as full pills.
+- **Do** keep cards at 24px, fields at 10px on the Field Fill with no visible border at rest, and buttons, chips and eyebrows as full pills.
 - **Do** make every action a text or call to Dev; give list items a 44px arrow disc that alone changes on hover.
 - **Do** gate hover styles behind `(hover: hover)` and keep tap targets at 44px or more.
 - **Do** keep the bounce-in to the hero H1 and keep everything visible without JS and under reduced motion.

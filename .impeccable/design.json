@@ -427,7 +427,7 @@
       "name": "Text Field",
       "kind": "input",
       "refersTo": "input",
-      "description": "Borderless field on a Paper fill; Focus Pine border on hover and focus, Error Red when invalid.",
+      "description": "Borderless field on the Field Fill (#e7ece4); Focus Pine border on hover and focus, Error Red when invalid.",
       "html": "<div class=\"ds-field\"><label for=\"ds-n\">Your name</label><input id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\"></div>",
       "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-field{display:grid;gap:8px;background:var(--card);padding:20px;border-radius:var(--r-card)} .ds-field label{font:400 18px/1.2 var(--display);color:var(--ink)} .ds-field input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s} .ds-field input::placeholder{color:var(--soft)} .ds-field input:hover,.ds-field input:focus{outline:none;border-color:var(--focus)}"
     },
@@ -520,7 +520,7 @@
       "**Do** alternate full-bleed bands light and dark: paper, pine, deep pine with the 135° texture at 3.5% white.",
       "**Do** use Work-Glove Orange as a fill with Pine Ink text on it, and Orange Ink when orange must be text on light.",
       "**Do** set headings, buttons, labels and phone numbers in Cal Sans 400, and everything else in the system stack at 16px/1.7.",
-      "**Do** keep cards at 24px, fields at 10px on a Paper fill with no visible border at rest, and buttons, chips and eyebrows as full pills.",
+      "**Do** keep cards at 24px, fields at 10px on the Field Fill with no visible border at rest, and buttons, chips and eyebrows as full pills.",
       "**Do** make every action a text or call to Dev; give list items a 44px arrow disc that alone changes on hover.",
       "**Do** gate hover styles behind `(hover: hover)` and keep tap targets at 44px or more.",
       "**Do** keep the bounce-in to the hero H1 and keep everything visible without JS and under reduced motion."
