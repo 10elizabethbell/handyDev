@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T20:53:41+00:00",
+  "generatedAt": "2026-10-20T00:54:53.448824+00:00",
   "title": "Design System: Handy Dev",
   "extensions": {
     "colorMeta": {
@@ -9,275 +9,140 @@
         "displayName": "Work-Glove Orange",
         "canonical": "#f28c28",
         "tonalRamp": [
-          "#1b0400",
-          "#421600",
-          "#693000",
-          "#954a00",
+          "#290000",
+          "#4e0300",
+          "#742500",
+          "#9c4400",
           "#c66400",
-          "#ed8821",
-          "#ffb36e",
-          "#ffe7ce"
+          "#e98b34",
+          "#ffb267",
+          "#ffd996"
         ]
       },
       "work-glove-orange-hot": {
         "role": "primary",
-        "displayName": "Hot Glove",
+        "displayName": "Hot Orange",
         "canonical": "#ff9d3a",
         "tonalRamp": [
-          "#1a0400",
-          "#3e1a00",
-          "#683100",
-          "#934c00",
-          "#c46600",
-          "#ea8a1e",
-          "#ffb260",
-          "#ffe7ca"
+          "#280000",
+          "#4c0600",
+          "#722800",
+          "#9a4600",
+          "#c36700",
+          "#e68d32",
+          "#ffb366",
+          "#ffdb95"
         ]
       },
-      "glove-ink": {
-        "role": "neutral",
-        "displayName": "Glove Ink",
-        "canonical": "#1d1a12",
+      "orange-ink": {
+        "role": "primary",
+        "displayName": "Orange Ink",
+        "canonical": "#9a4a00",
         "tonalRamp": [
-          "#0e0b05",
-          "#28251c",
-          "#454239",
-          "#656157",
-          "#868278",
-          "#a9a59a",
-          "#cdc9be",
-          "#f2eee3"
+          "#250000",
+          "#480e00",
+          "#6d2c00",
+          "#944a0d",
+          "#bd6a30",
+          "#df8f5b",
+          "#ffb585",
+          "#ffdcaf"
         ]
       },
       "pine": {
-        "role": "neutral",
-        "displayName": "Pine",
-        "canonical": "#173a26",
-        "tonalRamp": [
-          "#001104",
-          "#082d1a",
-          "#284b36",
-          "#476b54",
-          "#688d75",
-          "#8ab097",
-          "#add4bb",
-          "#d2fae0"
-        ]
-      },
-      "pine-deep": {
-        "role": "neutral",
-        "displayName": "Pine Deep",
-        "canonical": "#122f1f",
-        "tonalRamp": [
-          "#001104",
-          "#0f2c1c",
-          "#2c4a38",
-          "#4b6957",
-          "#6c8b77",
-          "#8eae9a",
-          "#b1d3bd",
-          "#d6f8e2"
-        ]
-      },
-      "dusk": {
-        "role": "neutral",
-        "displayName": "Dusk",
-        "canonical": "#1d3a48",
-        "tonalRamp": [
-          "#000e1a",
-          "#0b2936",
-          "#294655",
-          "#486675",
-          "#688798",
-          "#8aabbb",
-          "#aecfe0",
-          "#d3f5ff"
-        ]
-      },
-      "moss": {
         "role": "secondary",
-        "displayName": "Moss",
-        "canonical": "#2f6b3a",
+        "displayName": "Pine",
+        "canonical": "#1f4a33",
         "tonalRamp": [
-          "#001100",
-          "#003101",
-          "#0f5020",
-          "#34703f",
-          "#56935f",
-          "#79b681",
-          "#9ddba4",
-          "#c1ffc9"
+          "#001004",
+          "#0b2c1b",
+          "#274b37",
+          "#446c54",
+          "#628e74",
+          "#87b197",
+          "#add4bc",
+          "#d4f9e2"
         ]
       },
-      "sage-lawn": {
-        "role": "neutral",
-        "displayName": "Sage Lawn",
-        "canonical": "#e6ecd9",
-        "tonalRamp": [
-          "#090d02",
-          "#232719",
-          "#404435",
-          "#5f6453",
-          "#808574",
-          "#a2a896",
-          "#c6ccba",
-          "#ebf2de"
-        ]
-      },
-      "winter-slate": {
-        "role": "neutral",
-        "displayName": "Winter Slate",
-        "canonical": "#1f3447",
-        "tonalRamp": [
-          "#000c1c",
-          "#122739",
-          "#2f4458",
-          "#4d6479",
-          "#6e859c",
-          "#90a8bf",
-          "#b3cde5",
-          "#daf2ff"
-        ]
-      },
-      "snow-white": {
-        "role": "neutral",
-        "displayName": "Snow White",
-        "canonical": "#eef2f4",
-        "tonalRamp": [
-          "#090c0d",
-          "#232627",
-          "#3f4344",
-          "#5e6263",
-          "#7f8385",
-          "#a2a6a7",
-          "#c6cacc",
-          "#ebeff1"
-        ]
-      },
-      "yard-ink": {
-        "role": "neutral",
-        "displayName": "Yard Ink",
+      "deep-pine": {
+        "role": "secondary",
+        "displayName": "Deep Pine",
         "canonical": "#13301f",
         "tonalRamp": [
-          "#001104",
-          "#0f2c1b",
-          "#2c4a37",
-          "#4b6a56",
-          "#6c8b76",
-          "#8eae99",
-          "#b1d3bc",
-          "#d6f9e1"
+          "#010f05",
+          "#152b1d",
+          "#304939",
+          "#4d6957",
+          "#6c8b77",
+          "#90ae9a",
+          "#b5d2be",
+          "#dbf7e4"
         ]
       },
-      "yard-ink-soft": {
+      "pine-ink": {
         "role": "neutral",
-        "displayName": "Yard Ink Soft",
-        "canonical": "#3c5a44",
+        "displayName": "Pine Ink",
+        "canonical": "#13301f",
         "tonalRamp": [
-          "#001102",
-          "#0f2c18",
-          "#2c4a35",
-          "#4b6a53",
-          "#6c8c74",
-          "#8eaf96",
-          "#b1d3b9",
-          "#d6f9de"
+          "#010f05",
+          "#152b1d",
+          "#304939",
+          "#4d6957",
+          "#6c8b77",
+          "#90ae9a",
+          "#b5d2be",
+          "#dbf7e4"
+        ]
+      },
+      "body-pine": {
+        "role": "neutral",
+        "displayName": "Body Pine",
+        "canonical": "#2a3a30",
+        "tonalRamp": [
+          "#050e08",
+          "#1c2821",
+          "#38463d",
+          "#56665b",
+          "#76887c",
+          "#99aa9f",
+          "#bdcec3",
+          "#e3f3e9"
+        ]
+      },
+      "soft-pine": {
+        "role": "neutral",
+        "displayName": "Soft Pine",
+        "canonical": "#4d5c52",
+        "tonalRamp": [
+          "#050d08",
+          "#1d2821",
+          "#39463d",
+          "#57655c",
+          "#77877c",
+          "#9aaa9f",
+          "#bfcdc3",
+          "#e5f3e9"
         ]
       },
       "paper": {
         "role": "neutral",
         "displayName": "Paper",
-        "canonical": "#f2f1e6",
+        "canonical": "#f5f6f2",
         "tonalRamp": [
-          "#0c0b05",
-          "#26251d",
-          "#43423a",
-          "#636258",
-          "#848379",
-          "#a6a69b",
-          "#cbcabf",
-          "#f0efe4"
+          "#0b0b0a",
+          "#252523",
+          "#424240",
+          "#61625e",
+          "#82837f",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#eeefec"
         ]
       },
-      "paper-soft": {
+      "card-white": {
         "role": "neutral",
-        "displayName": "Paper Soft",
-        "canonical": "#c8d6c2",
-        "tonalRamp": [
-          "#060e03",
-          "#1e2919",
-          "#3b4636",
-          "#596654",
-          "#7a8775",
-          "#9caa97",
-          "#c0ceba",
-          "#e5f4df"
-        ]
-      },
-      "frost-soft": {
-        "role": "neutral",
-        "displayName": "Frost Soft",
-        "canonical": "#bfd0de",
-        "tonalRamp": [
-          "#030c16",
-          "#192731",
-          "#36444f",
-          "#546370",
-          "#758591",
-          "#97a7b5",
-          "#bbccda",
-          "#e0f1ff"
-        ]
-      },
-      "hero-mid": {
-        "role": "neutral",
-        "displayName": "Hero Mid",
-        "canonical": "#1b3d36",
-        "tonalRamp": [
-          "#00100b",
-          "#082c25",
-          "#284942",
-          "#476961",
-          "#678b82",
-          "#89aea5",
-          "#add3c9",
-          "#d2f8ef"
-        ]
-      },
-      "frost-icon": {
-        "role": "neutral",
-        "displayName": "Frost Icon",
-        "canonical": "#9fc3e0",
-        "tonalRamp": [
-          "#000c1e",
-          "#06283e",
-          "#25455e",
-          "#44657f",
-          "#6587a2",
-          "#87aac6",
-          "#aaceec",
-          "#e0f1ff"
-        ]
-      },
-      "bubble-green": {
-        "role": "neutral",
-        "displayName": "Bubble Green",
-        "canonical": "#2f7d4a",
-        "tonalRamp": [
-          "#001102",
-          "#002f12",
-          "#005025",
-          "#237340",
-          "#499561",
-          "#6cb982",
-          "#91dea5",
-          "#c6ffd4"
-        ]
-      },
-      "bubble-text": {
-        "role": "neutral",
-        "displayName": "Bubble Text",
-        "canonical": "#fff",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
         "tonalRamp": [
           "#0b0b0b",
           "#252525",
@@ -289,402 +154,385 @@
           "#eeeeee"
         ]
       },
-      "focus": {
-        "role": "tertiary",
-        "displayName": "Sky Focus",
-        "canonical": "#7cc6ff",
-        "tonalRamp": [
-          "#000c1e",
-          "#002842",
-          "#03466d",
-          "#16679a",
-          "#3f89bf",
-          "#63ade4",
-          "#98d0fd",
-          "#e0f1ff"
-        ]
-      },
-      "focus-light": {
-        "role": "tertiary",
-        "displayName": "Deep Focus",
-        "canonical": "#1f63a8",
-        "tonalRamp": [
-          "#000a24",
-          "#00254d",
-          "#00427d",
-          "#1e63a7",
-          "#4385cd",
-          "#66a9f3",
-          "#a3cdfd",
-          "#e4f0fe"
-        ]
-      },
-      "facebook-glyph": {
+      "on-dark": {
         "role": "neutral",
-        "displayName": "Facebook Glyph",
-        "canonical": "#8fb4ff",
+        "displayName": "On Dark",
+        "canonical": "#f4f7f3",
         "tonalRamp": [
-          "#00003a",
-          "#061d5c",
-          "#213e7e",
-          "#3e5ea2",
-          "#5e80c7",
-          "#80a4ee",
-          "#aec9ff",
-          "#e6efff"
+          "#0a0c0a",
+          "#242623",
+          "#414340",
+          "#60625f",
+          "#808380",
+          "#a3a6a2",
+          "#c7cac7",
+          "#edefec"
         ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On Dark Soft",
+        "canonical": "#cfe0d4",
+        "tonalRamp": [
+          "#060d08",
+          "#1e2821",
+          "#39453d",
+          "#57655c",
+          "#77877c",
+          "#9aa99f",
+          "#bfcdc3",
+          "#e5f3e9"
+        ]
+      },
+      "focus-pine": {
+        "role": "neutral",
+        "displayName": "Focus Pine",
+        "canonical": "#1f4a33",
+        "tonalRamp": [
+          "#001004",
+          "#0b2c1b",
+          "#274b37",
+          "#446c54",
+          "#628e74",
+          "#87b197",
+          "#add4bc",
+          "#d4f9e2"
+        ]
+      },
+      "error-red": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#300000",
+          "#570000",
+          "#810102",
+          "#ac2b22",
+          "#d84c3f",
+          "#fb7767",
+          "#ffa08f",
+          "#ffc9b8"
+        ]
+      },
+      "facebook-blue": {
+        "role": "neutral",
+        "displayName": "Facebook Blue (third-party mark)",
+        "canonical": "#1877f2",
+        "tonalRamp": [
+          "#000048",
+          "#001571",
+          "#00389c",
+          "#005aca",
+          "#217df8",
+          "#52a3ff",
+          "#7ecaff",
+          "#a9f0ff"
+        ]
+      },
+      "line-on-light": {
+        "role": "neutral",
+        "displayName": "Line on Light",
+        "canonical": "rgba(19,48,31,.12)"
+      },
+      "line-on-dark": {
+        "role": "neutral",
+        "displayName": "Line on Dark",
+        "canonical": "rgba(255,255,255,.14)"
+      },
+      "tint-on-light": {
+        "role": "neutral",
+        "displayName": "Tint on Light",
+        "canonical": "rgba(19,48,31,.06)"
+      },
+      "arrow-tint-on-light": {
+        "role": "neutral",
+        "displayName": "Arrow Tint on Light",
+        "canonical": "rgba(19,48,31,.07)"
+      },
+      "tint-on-dark": {
+        "role": "neutral",
+        "displayName": "Tint on Dark",
+        "canonical": "rgba(255,255,255,.12)"
+      },
+      "arrow-tint-on-dark": {
+        "role": "neutral",
+        "displayName": "Arrow Tint on Dark",
+        "canonical": "rgba(255,255,255,.1)"
+      },
+      "ghost-outline": {
+        "role": "neutral",
+        "displayName": "Ghost Outline",
+        "canonical": "rgba(244,247,243,.7)"
+      },
+      "texture-line": {
+        "role": "neutral",
+        "displayName": "Texture Line",
+        "canonical": "rgba(255,255,255,.035)"
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline and close headings; uppercase 900, capped at 96px."
+        "purpose": "Hero H1 only; bounces in letter by letter."
+      },
+      "display-phone": {
+        "displayName": "Display Phone",
+        "purpose": "The big tap-to-call number in the close."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings and the Winter band heading; phrases held together with no-wrap spans."
+        "purpose": "Section H2s."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service group heads and step titles (steps fixed at 24px)."
+        "purpose": "Service group H3s."
       },
-      "numeral": {
-        "displayName": "Step Numeral",
-        "purpose": "Moss step numbers spanning title and copy."
+      "claim": {
+        "displayName": "Claim",
+        "purpose": "The three trust claims."
       },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Default reading text."
-      },
-      "lead": {
-        "displayName": "Lead",
-        "purpose": "Section intros and band subtitles, 46-48ch."
+      "title-small": {
+        "displayName": "Title Small",
+        "purpose": "Step titles; Facebook row label."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Button and Facebook pill labels; rows use 700 at 18px, header number 800 at 16px."
-      },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Row notes, quote attribution, footer; the 16px floor."
+        "purpose": "Form labels, buttons, header phone (line-height 1 on buttons)."
       },
       "wordmark": {
         "displayName": "Wordmark",
-        "purpose": "Handy Dev mark in the header, uppercase 900."
+        "purpose": "Handy Dev in the header; 24px from 760px."
       },
-      "mock-ui": {
-        "displayName": "Mock UI",
-        "purpose": "Message preview only (imitates a phone screen); exempt from the 16px floor."
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero promise and close intro."
+      },
+      "body-large": {
+        "displayName": "Body Large",
+        "purpose": "Service rows and the ask-anyway line."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, inputs, chips, helper and error text."
+      },
+      "eyebrow": {
+        "displayName": "Eyebrow",
+        "purpose": "Eyebrow pill only."
       }
     },
     "shadows": [
       {
-        "name": "pill-lift",
-        "value": "0 10px 22px -10px rgba(5,20,12,.55)",
-        "purpose": "Primary button at rest."
+        "name": "row-lift",
+        "value": "0 6px 18px rgba(19,48,31,.06)",
+        "purpose": "White Facebook row on paper."
       },
       {
-        "name": "pill-lift-hover",
-        "value": "0 16px 28px -12px rgba(5,20,12,.6)",
-        "purpose": "Primary button on hover, with a 2px rise."
+        "name": "card-lift",
+        "value": "0 10px 30px rgba(19,48,31,.07)",
+        "purpose": "Estimate form card."
       },
       {
-        "name": "held-card",
-        "value": "0 30px 60px -24px rgba(5,20,12,.7), 0 8px 18px -8px rgba(5,20,12,.4)",
-        "purpose": "Message preview card, tilted 1.5deg."
-      },
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(8,30,18,.3)",
+        "purpose": "Floating text circle over every band."
+      }
+    ],
+    "textures": [
       {
-        "name": "ground-halo-pine",
-        "value": "0 0 18px rgba(23,58,38,.95), 0 0 6px rgba(23,58,38,.9)",
-        "purpose": "Text halo in the pine ground color on hero copy and header (close uses 16px/6px), so particles fade behind letters."
-      },
-      {
-        "name": "ground-halo-slate",
-        "value": "0 0 14px rgba(31,52,71,.95), 0 0 5px rgba(31,52,71,.9)",
-        "purpose": "Same halo in the slate ground color on the winter band."
+        "name": "band-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Hero, deep-pine services band and footer; keep at about 4% white or fainter."
       }
     ],
     "motion": [
       {
-        "name": "ease-out",
-        "value": "cubic-bezier(.16, 1, .3, 1)",
-        "purpose": "All movement: button rise, row slide."
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), from opacity 0 translateX(50px), 20ms stagger per letter",
+        "purpose": "Hero H1 bounce-in only; skipped under reduced motion and without JS."
       },
       {
-        "name": "color-change",
-        "value": ".2s",
-        "purpose": "Background and color transitions."
+        "name": "rise",
+        "value": "opacity and translateY(12px), .4s ease-out",
+        "purpose": "Fade-up for elements that start below the first screen."
       },
       {
-        "name": "lift",
-        "value": ".25s",
-        "purpose": "Button rise and shadow."
+        "name": "float-slide",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle in and out."
       },
       {
-        "name": "row-slide",
-        "value": ".3s",
-        "purpose": "Row name and arrow circle slide."
+        "name": "state",
+        "value": ".2s (buttons, arrow discs), .15s (fields, chips)",
+        "purpose": "Color and border state changes."
       },
       {
-        "name": "mower",
-        "value": "auto 120px/s; follow eased x7, capped 700px/s; resume after 4s idle; cut to 0.24 height; regrow 0.09/s",
-        "purpose": "Hero push mower (T.MOW_* and T.REGROW)."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "transition-duration .01ms; Field draws one still frame",
-        "purpose": "prefers-reduced-motion: reduce."
+        "name": "press",
+        "value": "scale(.98), .12s",
+        "purpose": "Button active state."
       }
     ],
     "breakpoints": [
       {
-        "name": "hero-band",
-        "value": "561px"
+        "name": "chips-tight",
+        "value": "max-width 380px"
       },
       {
-        "name": "canvas-phone (max)",
-        "value": "640px"
+        "name": "tablet",
+        "value": "760px"
       },
       {
-        "name": "columns",
-        "value": "860px"
+        "name": "desktop",
+        "value": "1024px"
       },
       {
-        "name": "hero-preview",
-        "value": "960px"
-      },
-      {
-        "name": "close-split",
-        "value": "1100px"
+        "name": "hover",
+        "value": "(hover: hover)"
       }
-    ],
-    "field": {
-      "renderer": "Field(canvas, options) inside the living-field IIFE in index.html",
-      "tunables": {
-        "WIND_SPEED": 1,
-        "BLADE_GAP": 5,
-        "BLADE_GAP_PHONE": 6.5,
-        "PUSH_RADIUS": 90,
-        "PUSH_FORCE": 1100,
-        "SPRING": 38,
-        "DAMP": 6.5,
-        "LEAF_RADIUS": 95,
-        "DRIFT_SPRING": 14,
-        "DRIFT_DAMP": 4.5,
-        "MOW_SCALE": 1.6,
-        "MOW_SCALE_PHONE": 1.2,
-        "MOW_AUTO_SPEED": 120,
-        "MOW_MAX_SPEED": 700,
-        "MOW_FOLLOW": 7,
-        "MOW_RESUME": 4,
-        "MOW_CUT_TO": 0.24,
-        "REGROW": 0.09,
-        "CLIPPINGS_MAX": 70,
-        "CLIPPINGS_MAX_PHONE": 36
-      },
-      "options": {
-        "grass": "[{h:[min,max], w, c:[colors]}] back to front; last layer = next band's color",
-        "drift": "{h:[back,front], amp, c:[back, front]}; front = next band's color",
-        "parts": "{kind:'leaf'|'flake', desk, phone, floor?:[min,max]}",
-        "base": "3px seam strip in the next band's color",
-        "mower": "true adds Dev's push mower to a grass field (hero only): mows alone until touched, then follows pointer/finger; grass regrows, clippings fly"
-      },
-      "leafColors": [
-        "#e2711d",
-        "#c9501c",
-        "#e9a62b",
-        "#b9862e",
-        "#d8622a"
-      ],
-      "grassGreens": {
-        "back": [
-          "#1f4a2c",
-          "#25562f",
-          "#1c4229"
-        ],
-        "mid": [
-          "#2f6b3a",
-          "#3b7a3f",
-          "#4a8a45"
-        ],
-        "light": [
-          "#8fb05a",
-          "#a9c27a",
-          "#7da24c"
-        ]
-      },
-      "driftBack": [
-        "#e3ebf1 (sage-slate edge, snowbank crest)",
-        "#9fb6c9 (winter)"
-      ],
-      "instances": [
-        "hero: 4 grass layers to sage + resting leaves + mower",
-        "edge sage-slate: snowbank-crest drift to slate",
-        "winter: snowfall + drift to snow white",
-        "edge snow-pine: spring grass to pine",
-        "close: leaves only"
-      ],
-      "mowerColors": {
-        "deck": "#f28c28",
-        "skirt": "#c4680f",
-        "handle-wheels": "#1d1a12",
-        "engine": "#2b2a24",
-        "engine-cap": "#4a4840",
-        "hubs": "#8c8a80"
-      },
-      "mowZone": ".mow-zone over the hero lawn band (96px, 120px from 561px), touch-action:none; html overscroll-behavior-y:none"
-    }
+    ]
   },
   "components": [
     {
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one action, used alone in the hero and the close: text Dev for a free estimate (sms: link, pre-filled body).",
-      "html": "<div style=\"background:#173a26;padding:16px\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H9l-5 4v-14Z\"/></svg>Text for a free estimate</a></div>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;border:2px solid var(--paper, #f2f1e6);font:800 17px/1 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s,box-shadow .25s cubic-bezier(.16,1,.3,1);}.ds-btn svg{width:22px;height:22px;flex:none;}.ds-btn:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:999px;}.ds-btn:active{transform:translateY(1px);}.ds-btn-primary{background:var(--orange, #f28c28);border-color:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);box-shadow:0 10px 22px -10px rgba(5,20,12,.55);}@media (hover:hover){.ds-btn-primary:hover{background:var(--orange-hot, #ff9d3a);border-color:var(--orange-hot, #ff9d3a);transform:translateY(-2px);box-shadow:0 16px 28px -12px rgba(5,20,12,.6);}}"
+      "description": "Orange pill with Pine Ink text; the main text-Dev and estimate action.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text this to Dev</a>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-primary{background:var(--accent);color:var(--ink);border-color:var(--accent)} .ds-btn-primary:hover{background:var(--accent-2);border-color:var(--accent-2)} .ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Service Rows",
-      "kind": "custom",
-      "refersTo": "service-row",
-      "description": "Each job is one whole-row sms: link ending in an arrow-in-circle that fills orange on hover.",
-      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Lawn mowing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Gutter cleaning</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Power washing</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
-      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--focus-light, #1f63a8);outline-offset:3px;border-radius:6px;}"
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined pill on pine; the hero's secondary action.",
+      "html": "<div class=\"ds-band\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text Dev</a></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-band{background:var(--navy);background-image:var(--texture);padding:24px} .ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,243,.7)} .ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)} .ds-btn-ghost:focus-visible{outline:3px solid var(--accent);outline-offset:3px}"
     },
     {
-      "name": "Winter Service Rows",
-      "kind": "custom",
-      "refersTo": "service-row-winter",
-      "description": "The service row on the slate winter band: paper text, paper-tinted hairlines and circle.",
-      "html": "<ul class=\"ds-rows ds-rows-winter\"><li><a class=\"ds-row\" href=\"#\"><span>Snow removal</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Salting and ice treatment</span><span class=\"ds-go\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\"/></svg></span></a></li></ul>",
-      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:var(--sage, #e6ecd9);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:18px;color:var(--ink, #13301f);border-top:1px solid rgba(19,48,31,.16);}.ds-rows li:last-child .ds-row{border-bottom:1px solid rgba(19,48,31,.16);}.ds-row>span:first-child{transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-go{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,48,31,.08);color:var(--ink, #13301f);transition:background-color .2s,color .2s,transform .3s cubic-bezier(.16,1,.3,1);}.ds-go svg{width:16px;height:16px;}@media (hover:hover){.ds-row:hover>span:first-child{transform:translateX(8px);}.ds-row:hover .ds-go{background:var(--orange, #f28c28);color:var(--orange-ink, #1d1a12);transform:translateX(-4px);}}.ds-row:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:6px;}.ds-rows-winter{background:var(--slate, #1f3447);}.ds-rows-winter .ds-row{color:var(--paper, #f2f1e6);border-color:rgba(242,241,230,.18);}.ds-rows-winter li:last-child .ds-row{border-bottom-color:rgba(242,241,230,.18);}.ds-rows-winter .ds-go{background:rgba(242,241,230,.12);color:var(--paper, #f2f1e6);}"
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Pine-outlined pill on light; the copy-message fallback.",
+      "html": "<button class=\"ds-btn ds-btn-line\" type=\"button\">Copy message</button>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-line{background:transparent;color:var(--ink);border-color:var(--ink)} .ds-btn-line:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Top Bar",
-      "kind": "nav",
-      "description": "Wordmark with orange Dev left; tap-to-call number with an orange phone icon right, on every width. No menu.",
-      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\">Handy <b>Dev</b></a><a class=\"ds-top-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.3-2.2 1.4a11 11 0 0 0 7.2 7.2l1.4-2.2 4.3 1.6V19a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z\"/></svg><span>(609) 467-9972</span></a></header>",
-      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 24px;background:var(--pine, #173a26);font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-mark{font-weight:900;font-size:clamp(19px,5.4vw,22px);line-height:44px;letter-spacing:-0.01em;text-transform:uppercase;color:var(--paper, #f2f1e6);text-decoration:none;}.ds-mark b{color:var(--orange, #f28c28);}.ds-top-call{color:var(--paper, #f2f1e6);text-decoration:none;font-weight:800;font-size:16px;white-space:nowrap;display:inline-flex;gap:8px;align-items:center;min-height:44px;}.ds-top-call svg{width:20px;height:20px;color:var(--orange, #f28c28);}.ds-top a:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;border-radius:6px;}@media (hover:hover){.ds-top-call:hover span{text-decoration:underline;text-underline-offset:4px;}}",
-      "refersTo": "top-call"
-    },
-    {
-      "name": "Facebook Pill",
+      "name": "Eyebrow Pill",
       "kind": "chip",
-      "refersTo": "facebook-pill",
-      "description": "Secondary link under Dev's quote: translucent paper pill with the Facebook glyph; never orange.",
-      "html": "<div style=\"background:#173a26;padding:24px\"><a class=\"ds-fb\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3Z\"/></svg><span>See more of my work on Facebook</span></a></div>",
-      "css": ".ds-fb{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px 0 14px;border-radius:999px;background:rgba(242,241,230,.1);color:var(--paper, #f2f1e6);font:800 17px/1.55 var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);text-decoration:none;transition:background-color .2s;}.ds-fb svg{width:22px;height:22px;color:#8fb4ff;}@media (hover:hover){.ds-fb:hover{background:rgba(242,241,230,.18);}.ds-fb:hover span{text-decoration:underline;}}.ds-fb:focus-visible{outline:3px solid var(--focus, #7cc6ff);outline-offset:3px;}"
+      "refersTo": "eyebrow",
+      "description": "Ellie's quiet label above the hero H1 and a few section headings; no hover, no arrow.",
+      "html": "<p class=\"ds-eyebrow\">Free estimate</p>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-eyebrow{margin:0;display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(19,48,31,.06);padding:9px 14px;border-radius:var(--pill)} .ds-eyebrow::before{content:\"\";width:7px;height:7px;border-radius:50%;background:var(--accent)}"
     },
     {
-      "name": "Message Preview Card",
-      "kind": "card",
-      "refersTo": "message-card",
-      "description": "Desktop hero card showing the exact text the primary button sends; tilted like a held phone.",
-      "html": "<div style=\"background:#173a26;padding:32px\"><div class=\"ds-msg\"><div class=\"ds-msg-to\"><span class=\"ds-msg-av\">HD</span><span><strong>Handy Dev</strong>Text message</span></div><div class=\"ds-bubble\">Hi Dev! I found your website. I'd like a free estimate or to schedule a job.\nJob: \nTown: \nWhen: </div><p class=\"ds-msg-cap\">Tap “Text for a free estimate” and this is ready to send.</p></div></div>",
-      "css": ".ds-msg{background:rgba(242,241,230,.96);color:var(--ink, #13301f);border-radius:26px;padding:22px 22px 18px;max-width:380px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);box-shadow:0 30px 60px -24px rgba(5,20,12,.7),0 8px 18px -8px rgba(5,20,12,.4);transform:rotate(1.5deg);}.ds-msg-to{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-soft, #3c5a44);padding-bottom:14px;}.ds-msg-to strong{display:block;color:var(--ink, #13301f);font-size:15px;}.ds-msg-av{width:34px;height:34px;border-radius:50%;background:var(--pine, #173a26);color:var(--orange, #f28c28);display:grid;place-items:center;font-weight:900;font-size:13px;}.ds-bubble{background:#2f7d4a;color:#fff;border-radius:20px 20px 6px 20px;padding:12px 15px;font-size:15px;line-height:1.45;margin-left:28px;white-space:pre-line;}.ds-msg-cap{margin:12px 0 0;font-size:13px;color:var(--ink-soft, #3c5a44);text-align:right;}"
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Borderless field on a Paper fill; Focus Pine border on hover and focus, Error Red when invalid.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Your name</label><input id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-field{display:grid;gap:8px;background:var(--card);padding:20px;border-radius:var(--r-card)} .ds-field label{font:400 18px/1.2 var(--display);color:var(--ink)} .ds-field input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s} .ds-field input::placeholder{color:var(--soft)} .ds-field input:hover,.ds-field input:focus{outline:none;border-color:var(--focus)}"
     },
     {
-      "name": "Step",
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Single-choice radios as 48px pills; selected fills Pine Ink.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-w\" id=\"ds-w1\" checked><label for=\"ds-w1\">As soon as you can</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w2\"><label for=\"ds-w2\">This week</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w3\"><label for=\"ds-w3\">I'm flexible</label></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0} .ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s} .ds-chips label:hover,.ds-chips input:focus-visible+label{border-color:var(--focus)} .ds-chips input:checked+label{background:var(--ink);color:#fff}"
+    },
+    {
+      "name": "Service Row",
       "kind": "custom",
-      "description": "Numbered step on snow: moss numeral spanning an uppercase title and short copy.",
-      "html": "<div class=\"ds-steps\"><div class=\"ds-step\"><span class=\"ds-step-n\">1</span><h3>Text or call</h3><p>Send me a photo and your town. You’ll be dealing with me, Dev, from the first text to the last.</p></div></div>",
-      "css": ".ds-steps{background:var(--snow, #eef2f4);padding:24px;font-family:var(--font, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif);}.ds-step{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline;}.ds-step-n{grid-row:span 2;font-weight:900;font-size:84px;line-height:.8;color:#2f6b3a;}.ds-step h3{margin:0;font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;line-height:.95;color:var(--ink, #13301f);}.ds-step p{margin:0;color:var(--ink-soft, #3c5a44);max-width:34ch;font-size:17px;line-height:1.55;}"
+      "refersTo": "arrow-disc",
+      "description": "Full-width text-Dev link on deep pine; only the arrow disc changes on hover.",
+      "html": "<div class=\"ds-deep\"><a class=\"ds-row\" href=\"#\">Gutter cleaning<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Power washing<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-deep{background-color:var(--deep);background-image:var(--texture);padding:12px 24px} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;color:var(--on-dark);text-decoration:none;font:18px/1.3 var(--text)} .ds-row+.ds-row{border-top:1px solid rgba(255,255,255,.14)} .ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s} .ds-row:hover .ds-arrow{background:var(--accent);color:var(--ink)} .ds-row:focus-visible{outline:none} .ds-row:focus-visible .ds-arrow{background:var(--accent);color:var(--ink);outline:3px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Paper header: wordmark left, tap-to-call number right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>Handy <i>Dev</i></b><span>Ocean County, NJ</span></a><a class=\"ds-tel\" href=\"#\">(609) 467-9972</a></header>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:var(--paper);color:var(--ink)} .ds-brand{display:flex;flex-direction:column;text-decoration:none;color:inherit;line-height:1} .ds-brand b{font:400 21px/1 var(--display);letter-spacing:.01em} .ds-brand b i{font-style:normal;color:var(--accent-ink)} .ds-brand span{font:600 11px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:5px} .ds-tel{font:400 18px/1 var(--display);text-decoration:none;color:inherit;min-height:44px;display:inline-flex;align-items:center} .ds-tel:hover{color:var(--accent-ink)}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-circle",
+      "description": "One 60px orange circle that slides in after the hero and hides over other text controls.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text Dev\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ":host{--paper:#f5f6f2;--card:#ffffff;--ink:#13301f;--body:#2a3a30;--soft:#4d5c52;--navy:#1f4a33;--deep:#13301f;--on-dark:#f4f7f3;--on-dark-soft:#cfe0d4;--accent:#f28c28;--accent-2:#ff9d3a;--accent-ink:#9a4a00;--focus:#1f4a33;--error:#b3261e;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--ink);box-shadow:0 10px 28px rgba(8,30,18,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)} .ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Yard Through the Seasons",
-    "overview": "The page is Dev's workplace, not a contractor's brochure: the yards and driveways of Ocean County, walked top to bottom from an autumn dusk, across a lawn Dev's mower is cutting, into a winter drift, out onto fresh snow, and back to pine as the grass grows in again. Each section is a full-bleed seasonal ground, and the seams between grounds are alive: grass blades, snow drifts and falling leaves drawn on canvas, pushed by the pointer or a finger, always in the colors of the ground they lead into. In the hero the visitor can take over a push mower and cut the lawn themselves. There are no photos, no icon cards, no quote form. The world carries the identity; the type and the button stay plain and loud. The copy speaks in Dev's own first person (\"Text me\", \"I'll tell you a fair price\").\n\nDensity is low and thumb-sized. Heavy uppercase headlines (up to 96px) sit over a quiet 17px body, and every primary interactive thing is 58px tall because the visitor is on a phone with a job in mind. One color does the work of \"act here\": work-glove orange, which fills the single text button, colors the header phone icon, fills the hover state of every job row, and marks the brand accent in the wordmark and the headline's second line. Focus is deliberately not orange: it is a clear blue ring so a focused button never reads as its own fill.\n\nThe build is phone-first in its CSS: base rules describe the phone, and wider layouts are added with `min-width` queries only.",
+    "northStar": "The Calm Work Truck",
+    "overview": "A plain, orderly page for one young handyman: full-bleed bands that alternate off-white paper with pine and deep pine, one work-glove orange that only ever fills things, and Cal Sans headings sitting on a quiet system-font body. Nothing on the page is busy. The order does the work: who he is, his promise, his list of jobs, a short form, his number.\n\nDensity is low and the rhythm is generous (64px bands on phones, 96px on desktop). Every action surface is a text to Dev: the hero button, each service row, the form, and the floating circle. The one flourish is the hero H1 bouncing in letter by letter on load; everything after it settles with a single 12px fade-up.\n\nThis is Ellie's house calm band style (learned from lpmr.co.uk), applied with pine in place of the style's navies and orange in place of its gold, both carried over from Dev's first build. There are no photos, no logo and no brand colors; the bands and the type carry the identity.",
     "keyCharacteristics": [
-      "Full-bleed seasonal bands in fixed order: pine/dusk hero, sage services, slate winter, snow-white steps, pine close, pine-deep footer.",
-      "A living canvas edge between bands whose front layer is the next band's color, so sections grow into each other instead of meeting at a line.",
-      "A push mower in the hero lawn that mows on its own until touched, then follows the finger or mouse; cut grass regrows.",
-      "Heavy uppercase sans for headings; plain sans for reading; copy in Dev's first-person voice.",
-      "Work-glove orange is the single action color and the single brand accent; focus is blue.",
-      "One action per spot: a single orange \"Text for a free estimate\" pill in the hero and the close; every service is a whole-row text link with a pre-filled SMS. The phone number lives only in the header and the footer."
+      "Full-bleed bands: paper, pine, deep pine with a faint 135° line texture.",
+      "One warm accent, used as a fill; orange text on light uses the darker orange ink.",
+      "Cal Sans at weight 400 for headings, buttons, labels and the phone number; the system stack for running text.",
+      "Soft, borderless shapes: 24px cards, 10px fields on a tinted fill, full pills.",
+      "Motion: one letter bounce-in on the hero H1, one fade-up for content below the first screen, one sliding text circle."
     ],
     "rules": [
       {
-        "name": "The One Glove Rule",
-        "body": "Work-glove orange is reserved for actions (the text button, the header phone icon, row hover, selection) and the brand accent (wordmark \"Dev\", the headline's second line, the favicon \"D\"). It is never a section ground, a decorative fill, body text, or the focus ring. In the canvas world the one orange object is Dev's own push mower deck: his equipment wears the glove color because it is the thing the visitor's hand takes over. The autumn leaf colors are world material in their own hues, not the UI accent, and are never used in CSS.",
+        "name": "The Fill-Only Orange Rule",
+        "body": "Work-Glove Orange is a fill on any light ground. Where orange must read as text or an icon on paper or white, use Orange Ink. Text placed on an orange fill is Pine Ink, never white.",
         "section": "colors"
       },
       {
-        "name": "The Blue Focus Rule",
-        "body": "Keyboard focus is a 3px blue outline with a 3px offset and 6px corner, sky blue on dark grounds and deep blue on sage and snow. Never orange, so focus never merges with the button fill.",
+        "name": "The Accent Tail Rule",
+        "body": "A heading's last phrase may take the accent color, set in a span. On dark bands that is Work-Glove Orange; on paper it is Orange Ink.",
         "section": "colors"
       },
       {
-        "name": "The No-Black Rule",
-        "body": "No ground is black or near-neutral dark. The darkest surface is pine deep; shadows and text halos are pine- or slate-tinted, never pure black.",
+        "name": "The Never-Black Rule",
+        "body": "The darkest surface is Deep Pine. No black grounds, no gray text; soft text is always pine-tinted.",
         "section": "colors"
       },
       {
-        "name": "The Band Text Rule",
-        "body": "Each ground has a fixed text pair: paper / paper soft on pine, paper / frost soft on slate, yard ink / yard ink soft on sage and snow. Do not mix pairs across grounds.",
-        "section": "colors"
-      },
-      {
-        "name": "The System-Stack Rule",
-        "body": "The platform sans stack is the brand voice, by Ellie's house style for these sites (pitch-site ellie-taste.md, Type: \"the system font stack, heavy uppercase display headings ... It's fast and it worked\"). It is a deliberate owner choice that overrides Impeccable's craft-floor preference for a sourced display face: no web fonts, no font downloads, nothing to slow the first screen on cellular.",
+        "name": "The Display-Is-Cal-Sans, Body-Is-System Rule",
+        "body": "Only headings and heading-like voices (buttons, labels, claims, step titles, phone numbers, wordmark) use Cal Sans. Running text, inputs, chips and the eyebrow use the system stack. No second webfont.",
         "section": "typography"
       },
       {
-        "name": "The 96 Ceiling Rule",
-        "body": "No type exceeds 96px. Display sizes scale with viewport width and stop at 96.",
+        "name": "The One-Weight Rule",
+        "body": "Cal Sans is always weight 400; hierarchy comes from size alone. Never fake-bold it.",
         "section": "typography"
       },
       {
-        "name": "The Uppercase-Is-Heading Rule",
-        "body": "Uppercase belongs to h1-h3 and the wordmark only. Body, labels, buttons and rows stay sentence case.",
+        "name": "The Sixteen Floor Rule",
+        "body": "Inputs and body text are 16px or larger so iOS never zooms and helper text stays legible.",
         "section": "typography"
       },
       {
-        "name": "The 16px Floor Rule",
-        "body": "Reading text on the page never goes below 16px. The pitch line is fitted to one line between 20px and 16px by script, then wraps rather than shrink further (its 14px CSS floor is only a pre-script fallback). The `mock-ui` sizes (15px, 13px) live only inside the desktop message preview, which imitates a phone screen.",
-        "section": "typography"
-      },
-      {
-        "name": "The Thumb Rule",
-        "body": "Every tap target is at least 44px; the text button and job rows are 58px, the Facebook pill 48px. On phones the text button runs full-width.",
+        "name": "The Hover-Needs-A-Pointer Rule",
+        "body": "Every hover style lives inside `(hover: hover)`, so taps never leave a stuck state. Focus styles are always on.",
         "section": "layout"
       },
       {
-        "name": "The Lawn-Is-A-Surface Rule",
-        "body": "Over the hero's lawn band a transparent mow zone (96px phone, 120px wider) takes `touch-action: none`, so a drag in any direction mows instead of scrolling; the page sets `overscroll-behavior-y: none` so mowing never rubber-bands the page. Keep the zone to the lawn band only, never over copy or the button.",
-        "section": "layout"
-      },
-      {
-        "name": "The Lift-What-You-Tap Rule",
-        "body": "Box shadows go on the primary action and the message card. Lists, sections and text blocks are flat.",
-        "section": "elevation"
-      },
-      {
-        "name": "The Halo-Is-Ground Rule",
-        "body": "Text over a living canvas carries a halo in exactly its band's ground color, never a tint, a contrasting glow, or black. It exists for legibility over particles, not as decoration.",
+        "name": "The Soft Lift Rule",
+        "body": "Shadows are wide, low-opacity and pine-tinted. Nothing gets a border-plus-shadow or a hard offset.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do write base CSS for the phone and add wider layouts with `min-width` queries only.",
-      "Do keep work-glove orange for actions and the brand accent; put glove ink on top of it.",
-      "Do use the blue focus ring: `focus` on dark grounds, `focus-light` on sage and snow.",
-      "Do keep every ground in the pine, dusk, sage, slate, snow family; darkest is pine deep.",
-      "Do join bands with a `Field` edge whose front layer is the next band's color.",
-      "Do make the whole service row the link, ending in the arrow-in-circle, with a pre-filled `sms:` body naming the job.",
-      "Do give each action spot one orange text pill and keep the phone number to the header and footer.",
-      "Do halo text over a living canvas in its own ground color.",
-      "Do write copy in Dev's first person.",
-      "Do gate hover motion behind `(hover: hover)` and give every canvas a reduced-motion still frame.",
-      "Do cap display type at 96px and keep headings uppercase 900."
+      "**Do** alternate full-bleed bands light and dark: paper, pine, deep pine with the 135° texture at 3.5% white.",
+      "**Do** use Work-Glove Orange as a fill with Pine Ink text on it, and Orange Ink when orange must be text on light.",
+      "**Do** set headings, buttons, labels and phone numbers in Cal Sans 400, and everything else in the system stack at 16px/1.7.",
+      "**Do** keep cards at 24px, fields at 10px on a Paper fill with no visible border at rest, and buttons, chips and eyebrows as full pills.",
+      "**Do** make every action a text or call to Dev; give list items a 44px arrow disc that alone changes on hover.",
+      "**Do** gate hover styles behind `(hover: hover)` and keep tap targets at 44px or more.",
+      "**Do** keep the bounce-in to the hero H1 and keep everything visible without JS and under reduced motion."
     ],
     "donts": [
-      "Don't use black or neutral-gray grounds, or pure-black shadows.",
-      "Don't use orange as a section ground, decoration, focus ring, or text color outside the brand accent; the mower deck is the only orange in the canvas.",
-      "Don't put a second pill or a Call button beside the text button.",
-      "Don't put small uppercase kicker or eyebrow labels above headings.",
-      "Don't add thin decorative highlight lines (glossy top-edge strokes, accent rules under headings, gradient hairlines). The only 1px lines are the structural list and section dividers tinted from the band's own text color.",
-      "Don't add a contact form, icon-card grids, or stock photography; the text link and the living field carry the page."
+      "**Don't** put white text on orange or orange text on paper.",
+      "**Don't** add a second webfont, bold Cal Sans, or set body copy in Cal Sans.",
+      "**Don't** use black grounds, gray text, hard offset shadows or border-plus-shadow cards.",
+      "**Don't** put an eyebrow above every section, give it a hover state or arrow, or mark it up as a heading.",
+      "**Don't** add a bottom contact bar or a second floating control; the one circle hides wherever another text control is on screen.",
+      "**Don't** let the line texture get stronger than about 4% white.",
+      "**Don't** apply the bounce-in to any heading other than the hero H1."
     ]
   }
 }
