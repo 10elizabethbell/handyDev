@@ -90,7 +90,7 @@ section{padding:64px 0}
 .brand b{font:400 21px/1 var(--display);letter-spacing:.01em}
 .brand b i{font-style:normal;color:var(--accent-ink)}
 .brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
-.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 18px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:18px;height:18px;flex:none;color:var(--accent-ink)}
 
 /* ---------- Hero ---------- */
@@ -106,6 +106,7 @@ section{padding:64px 0}
 .actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
 /* ---------- Trust ---------- */
+.split .lede{margin-top:16px}
 .claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
 .claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
 .claims li+li{border-top:1px solid var(--line)}
@@ -128,7 +129,7 @@ section{padding:64px 0}
 .row .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .row:focus-visible .arrow{background:var(--accent);color:var(--ink);outline:3px solid var(--accent);outline-offset:3px}
-.ask-any{margin-top:36px;font-size:17px}
+.ask-any{margin-top:36px;font-size:18px}
 .ask-any a{color:var(--on-dark);text-underline-offset:4px;text-decoration-color:var(--accent);display:inline-block;padding:10px 0;margin:-10px 0}
 
 /* ---------- How it works (inside the estimate section) ---------- */
@@ -142,7 +143,7 @@ section{padding:64px 0}
 .ask .wrap{display:grid;gap:32px}
 form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px;box-shadow:0 10px 30px rgba(19,48,31,.07)}
 .field{display:grid;gap:8px;min-width:0}
-.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
 .field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s}
@@ -154,14 +155,16 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{border-color:var(--focus);outline:none}
 .chips input:checked+label{background:var(--ink);color:#fff}
-.err{display:none;font-size:15px;color:var(--error)}
+.err{display:none;font-size:16px;color:var(--error)}
 .field.bad .err{display:block}
 .field.bad input,.field.bad textarea{border-color:var(--error)}
-form .btn-primary{width:100%}
-form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.after{font-size:15px;color:var(--soft)}
-.sent{color:var(--ink);font-weight:600}
-.sent a{white-space:nowrap;font-variant-numeric:tabular-nums;display:inline-block;padding:11px 0;margin:-11px 0}
+form .btn{width:100%}
+form .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:16px;color:var(--soft)}
+.sent{display:grid;gap:12px;color:var(--ink);font-weight:600}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+#msgText{font-weight:400;min-height:110px}
+.sent p a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
@@ -218,8 +221,8 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 .ask-any a:hover{color:var(--accent)}
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
-form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
-.sent a:hover{color:var(--accent-ink)}
+form .btn:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent p a:hover{color:var(--accent-ink)}
 .bigtel:hover{color:var(--accent)}
 footer a:hover{color:var(--accent)}
 }
@@ -237,7 +240,7 @@ THESIS: One young local handyman who does the small jobs, inside, in the yard an
 OWN-WORLD: Off-white paper, pine (#1f4a33) and deep pine (#13301f, faint diagonal lines) bands, work-glove orange (#f28c28) as the one warm accent (fills only; #9a4a00 when it has to be text on light). Cal Sans display, system body at 16/1.7. No logo or brand colors exist; pine and orange carry over from the first build's yard world.
 STORY: The visitor sees who does small jobs in Ocean County, reads Dev's own promise (reliable work, fair pricing, free estimates), finds their job in the list and taps it, or fills in three fields that become a text to Dev.
 FIRST VIEWPORT: Paper header with the wordmark left and the tap-to-call number top right. Pine hero with the line texture: eyebrow, "Small jobs, big impact in Ocean County.", one promise line, two pill buttons (Get a free estimate, Text Dev).
-FORM: calm band system without photos (none supplied); the earlier seasonal-yard world with the mower hero is in git history (commit 9a51e2d).
+FORM: house default, calm band style (calm-photo-style.md, 2026-10-19), no concept roll; no photos supplied; the earlier seasonal-yard world is in git history (commit 9a51e2d).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -269,7 +272,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap split">
     <div class="rise">
       <h2 id="h-trust">I leave it better than I found it.</h2>
-      <p class="lede" style="margin-top:16px">I take pride in doing things right and keeping my prices fair. When I'm done, your place looks better than when I got there.</p>
+      <p class="lede">I take pride in doing things right and keeping my prices fair.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v7M27 4v7"/><path d="M14 25l4 4 8-8"/></svg>Reliable work</li>
@@ -288,7 +291,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="head rise">
       <p class="eyebrow">Inside, outside, all year</p>
       <h2 id="h-svc">Fix it. Mow it. <span class="accent">Shovel it.</span></h2>
-      <p class="lede">Tap a job and a text to me opens with it written out.</p>
+      <p class="lede">Tap a job to text me about it.</p>
     </div>
     <div class="groups">
       <div class="group rise">
@@ -363,8 +366,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         </div>
       </fieldset>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Dev</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text me at <a href="tel:+16094679972">(609) 467-9972</a>.</p>
       <p class="after">Opens your messages with this written out. You can add a photo there.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages? Tap the button again, or copy your message and text it to <a href="tel:+16094679972">(609) 467-9972</a>.</p>
+        <button type="button" class="btn btn-line" id="copyMsg">Copy message</button>
+        <textarea id="msgText" readonly aria-label="Your message to Dev" hidden></textarea>
+      </div>
     </form>
   </div>
 </section>
@@ -372,7 +379,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
     <div class="rise">
-      <h2 id="h-close">Handy Dev</h2>
+      <h2 id="h-close">Handy <span class="accent">Dev</span></h2>
       <p class="who">I'm a young, hardworking local guy who's been doing handyman, yard work, and property maintenance for the past few years.</p>
       <p class="area">I work around Ocean County, NJ. Not sure I cover your town? Text me and ask.</p>
     </div>
@@ -451,9 +458,17 @@ document.documentElement.classList.add('js');
     var msg='Hi Dev, this is '+name+'. I found your website and I\'d like a free estimate for: '+what.replace(/[.\s]+$/,'')+'.';
     if(where)msg+='\nTown: '+where;
     if(w)msg+='\nWhen: '+w.value;
-    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
-    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    var url='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    document.getElementById('msgText').value=msg;
+    location.href=url;
+    // if no messages app opened (desktop, some in-app browsers), offer a copy and the number
     setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+  // copy can be blocked (Facebook's in-app browser): fall back to showing the text, selected
+  document.getElementById('copyMsg').addEventListener('click',function(){
+    var t=document.getElementById('msgText'),btn=this;
+    function show(){t.hidden=false;t.focus();t.select()}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(function(){btn.textContent='Copied'},show)}else show();
   });
 })();
 
@@ -461,10 +476,12 @@ document.documentElement.classList.add('js');
 (function(){
   var fl=document.getElementById('float');if(!fl)return;
   if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
-  var pastHero=false,formIn=false;
-  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  // hidden over the service rows too, where each row already texts Dev about its job
+  var pastHero=false,formIn=false,rowsIn=false;
+  function sync(){var on=pastHero&&!formIn&&!rowsIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
   new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('jobForm'));
+  new IntersectionObserver(function(es){rowsIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.querySelector('#services .groups'));
   sync();
 })();
 

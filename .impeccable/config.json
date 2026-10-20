@@ -62,6 +62,15 @@
         ],
         "createdAt": "2026-10-20T00:43:55.570Z",
         "reason": "Ellie chose the faint band line texture (calm-photo-style.md item 2, 2026-10-19)"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T00:45:12.034Z",
+        "reason": "Ellie chose the faint band line texture (calm-photo-style.md item 2, 2026-10-19)"
       }
     ]
   }
