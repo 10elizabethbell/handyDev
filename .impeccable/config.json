@@ -47,6 +47,21 @@
         "value": "rgba(31,52,71,.9)",
         "createdAt": "2026-10-17T20:50:52.840Z",
         "reason": "Claude triage 2026-10-17: same ground-colored text glow as the hex ignores (pine/slate), required by finishing-rules.md 'Readable over the scene'"
+      },
+      {
+        "rule": "gray-on-color",
+        "value": "#cfe0d4",
+        "createdAt": "2026-10-20T00:43:55.501Z",
+        "reason": "pitch-site calm style: pine-tinted soft text on pine, 7.3:1 measured; not gray"
+      },
+      {
+        "rule": "repeating-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T00:43:55.570Z",
+        "reason": "Ellie chose the faint band line texture (calm-photo-style.md item 2, 2026-10-19)"
       }
     ]
   }
