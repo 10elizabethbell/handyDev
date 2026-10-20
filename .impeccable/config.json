@@ -71,6 +71,12 @@
         ],
         "createdAt": "2026-10-20T00:45:12.034Z",
         "reason": "Ellie chose the faint band line texture (calm-photo-style.md item 2, 2026-10-19)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-20T00:57:29.796Z",
+        "reason": "focus-ring rounding on :focus-visible, not a surface radius (pitch-site build, DPG reference uses the same)"
       }
     ]
   }
