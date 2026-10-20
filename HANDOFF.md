@@ -3,6 +3,8 @@
 **Live:** https://10elizabethbell.github.io/handyDev/ · **Repo:** https://github.com/10elizabethbell/handyDev (public) · **Built:** 2026-10-08 from Muse brief (brief.md, 2026-10-08) · **Finishing-rules pass:** 2026-10-17 · **Calm-style revamp:** 2026-10-19
 
 ## What changed in the 2026-10-19 revamp
+Live and checked on 2026-10-19: GitHub Pages serves commit `04af559`. The Call Sheet already had this URL (the script reported UNCHANGED). Dev has not been contacted.
+
 The site was rebuilt end to end under the new house default, the calm band style learned from lpmr.co.uk (`calm-photo-style.md`), starting from DPG Home Improvement's page. Dev hasn't been contacted, so nothing from the old look was kept for continuity's sake.
 - **Gone:** the seasonal-yard canvas world. That was the mower hero you could drive, swaying grass, kickable leaves, the snow band with a drift to dig through, and the snowbank dividers, about 400 lines of canvas code. The old build is commit `9a51e2d` if you want any of it back.
 - **Look:** paper, pine and deep-pine bands alternate down the page, with the faint diagonal line texture on the dark ones. Work-glove orange is the one accent and is used as a fill; text on it is deep pine. Headings are Cal Sans, body is the system stack at 16/1.7, buttons are pills, and the form is a 24px card.
